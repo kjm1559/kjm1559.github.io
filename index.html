@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Myungjin Kim — AI Lab Leader</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #08090a;
+      --panel: #0f1011;
+      --surface: #191a1b;
+      --surface-hover: #28282c;
+      --text-primary: #f7f8f8;
+      --text-secondary: #d0d6e0;
+      --text-tertiary: #8a8f98;
+      --text-quaternary: #62666d;
+      --brand: #5e6ad2;
+      --accent: #7170ff;
+      --accent-hover: #828fff;
+      --border: rgba(255,255,255,0.08);
+      --border-subtle: rgba(255,255,255,0.05);
+      --radius: 6px;
+      --radius-card: 8px;
+      --radius-panel: 12px;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+      font-feature-settings: 'cv01', 'ss03';
+      background: var(--bg);
+      color: var(--text-primary);
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* ===== Navigation ===== */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 48px;
+      background: rgba(8,9,10,0.8);
+      backdrop-filter: saturate(180%) blur(20px);
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .nav-brand {
+      font-size: 14px;
+      font-weight: 510;
+      color: var(--text-primary);
+      text-decoration: none;
+      letter-spacing: -0.01em;
+    }
+
+    .mobile-menu-btn {
+      display: none;
+      font-size: 24px;
+      background: none;
+      border: none;
+      color: var(--text-primary);
+      padding: 4px;
+      cursor: pointer;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 4px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-size: 13px;
+      font-weight: 510;
+      color: var(--text-tertiary);
+      text-decoration: none;
+      padding: 6px 12px;
+      border-radius: var(--radius);
+      transition: color 0.15s, background 0.15s;
+    }
+
+    .nav-links a:hover {
+      color: var(--text-primary);
+      background: rgba(255,255,255,0.04);
+    }
+
+    .nav-cta {
+      font-size: 13px;
+      font-weight: 510;
+      color: #fff;
+      background: var(--brand);
+      padding: 7px 14px;
+      border-radius: var(--radius);
+      text-decoration: none;
+      transition: background 0.15s;
+      margin-left: 8px;
+    }
+
+    .nav-cta:hover {
+      background: var(--accent);
+    }
+
+    /* ===== Hero ===== */
+    .hero {
+      min-height: calc(100vh - 57px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 120px 48px 80px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 20%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(94,106,210,0.12) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .hero-label {
+      font-size: 12px;
+      font-weight: 510;
+      color: var(--accent);
+      letter-spacing: 0em;
+      padding: 4px 10px;
+      background: rgba(113,112,255,0.08);
+      border: 1px solid rgba(113,112,255,0.15);
+      border-radius: 9999px;
+      margin-bottom: 32px;
+      text-transform: none;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-title {
+      font-size: clamp(48px, 7vw, 72px);
+      font-weight: 510;
+      line-height: 1.00;
+      letter-spacing: -0.015em;
+      color: var(--text-primary);
+      margin-bottom: 24px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-subtitle {
+      font-size: clamp(16px, 2vw, 18px);
+      font-weight: 400;
+      color: var(--text-tertiary);
+      max-width: 600px;
+      line-height: 1.6;
+      letter-spacing: -0.002em;
+      margin-bottom: 40px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      justify-content: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--brand);
+      color: #fff;
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 14px;
+      font-weight: 510;
+      padding: 8px 16px;
+      border: none;
+      border-radius: var(--radius);
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.15s;
+    }
+
+    .btn-primary:hover {
+      background: var(--accent);
+    }
+
+    .btn-ghost {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255,255,255,0.02);
+      color: var(--text-secondary);
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 14px;
+      font-weight: 510;
+      padding: 8px 16px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.15s, border-color 0.15s;
+    }
+
+    .btn-ghost:hover {
+      background: rgba(255,255,255,0.05);
+      border-color: rgba(255,255,255,0.12);
+      color: var(--text-primary);
+    }
+
+    /* ===== Sections ===== */
+    section {
+      padding: 104px 48px;
+      max-width: 1120px;
+      margin: 0 auto;
+    }
+
+    .section-header {
+      margin-bottom: 48px;
+    }
+
+    .section-label {
+      font-size: 12px;
+      font-weight: 510;
+      color: var(--accent);
+      letter-spacing: 0em;
+      text-transform: none;
+      margin-bottom: 8px;
+      display: block;
+    }
+
+    .section-title {
+      font-size: 32px;
+      font-weight: 400;
+      line-height: 1.13;
+      letter-spacing: -0.015em;
+      color: var(--text-primary);
+    }
+
+    /* ===== Cards ===== */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.02);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-card);
+      padding: 28px;
+      transition: border-color 0.2s, background 0.2s;
+    }
+
+    .card:hover {
+      border-color: var(--border);
+      background: rgba(255,255,255,0.03);
+    }
+
+    .card h3 {
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 1.33;
+      letter-spacing: -0.008em;
+      color: var(--text-primary);
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 1.6;
+      letter-spacing: -0.004em;
+      color: var(--text-tertiary);
+    }
+
+    /* ===== Experience Timeline ===== */
+    .exp-item {
+      display: grid;
+      grid-template-columns: 160px 1fr;
+      gap: 48px;
+      padding: 32px 0;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .exp-item:first-child {
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    .exp-date {
+      font-size: 14px;
+      font-weight: 400;
+      color: var(--text-quaternary);
+      line-height: 1.6;
+    }
+
+    .exp-content h3 {
+      font-size: 17px;
+      font-weight: 600;
+      line-height: 1.33;
+      letter-spacing: -0.006em;
+      color: var(--text-primary);
+      margin-bottom: 4px;
+    }
+
+    .exp-content .exp-role {
+      font-size: 14px;
+      font-weight: 510;
+      color: var(--text-secondary);
+      margin-bottom: 10px;
+    }
+
+    .exp-content p {
+      font-size: 15px;
+      font-weight: 400;
+      color: var(--text-tertiary);
+      line-height: 1.6;
+      letter-spacing: -0.002em;
+    }
+
+    /* ===== Skills (Pill Chips) ===== */
+    .skill-group {
+      margin-bottom: 32px;
+    }
+
+    .skill-group:last-child {
+      margin-bottom: 0;
+    }
+
+    .skill-group h3 {
+      font-size: 14px;
+      font-weight: 510;
+      color: var(--text-secondary);
+      text-transform: none;
+      margin-bottom: 12px;
+      letter-spacing: 0em;
+    }
+
+    .chip-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .chip {
+      font-size: 13px;
+      font-weight: 510;
+      color: var(--text-secondary);
+      background: transparent;
+      border: 1px solid var(--border);
+      padding: 4px 10px;
+      border-radius: 9999px;
+      transition: border-color 0.15s, color 0.15s, background 0.15s;
+      cursor: default;
+    }
+
+    .chip:hover {
+      border-color: var(--accent);
+      color: var(--text-primary);
+      background: rgba(113,112,255,0.06);
+    }
+
+    /* ===== Publication Cards ===== */
+    .pub-card {
+      background: rgba(255,255,255,0.02);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-card);
+      padding: 24px 28px;
+      margin-bottom: 12px;
+      transition: border-color 0.2s, background 0.2s;
+    }
+
+    .pub-card:hover {
+      border-color: var(--border);
+      background: rgba(255,255,255,0.03);
+    }
+
+    .pub-card h3 {
+      font-size: 15px;
+      font-weight: 510;
+      line-height: 1.47;
+      letter-spacing: -0.003em;
+      color: var(--text-primary);
+      margin-bottom: 6px;
+    }
+
+    .pub-card .pub-meta {
+      font-size: 13px;
+      font-weight: 400;
+      color: var(--text-quaternary);
+    }
+
+    /* ===== Contact Grid ===== */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 12px;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 14px;
+      font-weight: 510;
+      color: var(--text-tertiary);
+      text-decoration: none;
+      padding: 16px 20px;
+      background: rgba(255,255,255,0.02);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-card);
+      transition: border-color 0.2s, color 0.2s, background 0.2s;
+    }
+
+    .contact-item:hover {
+      border-color: var(--border);
+      color: var(--text-primary);
+      background: rgba(255,255,255,0.04);
+    }
+
+    .contact-item svg {
+      flex-shrink: 0;
+      opacity: 0.7;
+      transition: opacity 0.2s;
+    }
+
+    .contact-item:hover svg {
+      opacity: 1;
+    }
+
+    /* ===== Footer ===== */
+    footer {
+      border-top: 1px solid var(--border-subtle);
+      padding: 32px 48px;
+      text-align: center;
+      font-size: 13px;
+      font-weight: 400;
+      color: var(--text-quaternary);
+    }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 768px) {
+      nav { padding: 12px 24px; position: relative; }
+      .mobile-menu-btn { display: flex; align-items: center; }
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 48px; left: 0; right: 0;
+        background: var(--panel);
+        flex-direction: column;
+        padding: 16px;
+        border-bottom: 1px solid var(--border-subtle);
+      }
+      .nav-links.open { display: flex; }
+      .nav-cta { display: none; }
+      .hero { padding: 80px 24px; min-height: auto; }
+      section { padding: 72px 24px; }
+      .exp-item { grid-template-columns: 1fr; gap: 8px; }
+      .hero-actions { flex-direction: column; align-items: center; }
+      .section-title { font-size: 24px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#" class="nav-brand">Myungjin Kim</a>
+    <button class="mobile-menu-btn" onclick="toggleMenu()">&#9776;</button>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#contact" class="nav-cta">Contact</a>
+  </nav>
+
+  <!-- Hero -->
+  <div class="hero">
+    <span class="hero-label">AI Lab Leader &amp; ML Specialist</span>
+    <h1 class="hero-title">Myungjin Kim</h1>
+    <p class="hero-subtitle">
+      AI Lab Leader at Grepp, Ph.D. Candidate in Computer Vision. 10+ years of industry experience spanning Machine Vision, Anomaly Detection, LLM Agents, and Enterprise AI solutions.
+    </p>
+    <div class="hero-actions">
+      <a href="#experience" class="btn-primary">View Career ↓</a>
+      <a href="#contact" class="btn-ghost">Contact</a>
+    </div>
+  </div>
+
+  <!-- About -->
+  <section id="about">
+    <div class="section-header">
+      <span class="section-label">About</span>
+      <h2 class="section-title">Profile</h2>
+    </div>
+    <div class="card-grid">
+      <div class="card">
+        <h3>Background</h3>
+        <p>AI Lab Leader at Grepp (Programmers). Deep expertise in Data Analysis, ML preprocessing, EDA, modeling, and Computer Vision (segmentation, registration, sinogram). Currently developing Multi-modal Models for proctoring.</p>
+      </div>
+      <div class="card">
+        <h3>Research Focus</h3>
+        <p>Ph.D. Candidate in Computer Vision at Hankuk University of Foreign Studies. Medical image processing, LLM Agent development (SKT Aster), Reinforcement Learning, VAE, and Enterprise AI platform architecture.</p>
+      </div>
+      <div class="card">
+        <h3>Certifications</h3>
+        <p>Information Processing Engineer (정보처리기사) from Korea. English proficiency for international collaboration and research.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience">
+    <div class="section-header">
+      <span class="section-label">Experience</span>
+      <h2 class="section-title">Career</h2>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-date">2025 — Now</div>
+      <div class="exp-content">
+        <h3>AI Research Lab</h3>
+        <div class="exp-role">AI Lab Leader | Grepp (Programmers)</div>
+        <p>Developing Multi-modal Models for proctoring. Leading AI team and enterprise AI solutions.</p>
+      </div>
+    </div>
+    <div class="exp-item">
+      <div class="exp-date">2021 — 2025</div>
+      <div class="exp-content">
+        <h3>SK Planet</h3>
+        <div class="exp-role">Machine Learning Engineer</div>
+        <p>Machine Vision for payments, Anomaly Detection, LLM MLE, and Enterprise AI platforms.</p>
+      </div>
+    </div>
+    <div class="exp-item">
+      <div class="exp-date">2019 — 2021</div>
+      <div class="exp-content">
+        <h3>WeMakePrice</h3>
+        <div class="exp-role">Data Engineer &amp; Machine Learning</div>
+        <p>Reinforcement Learning, Inverse RL, VAE. Feature mining, data visualization, model design, probability simulation.</p>
+      </div>
+    </div>
+    <div class="exp-item">
+      <div class="exp-date">2018 — 2019</div>
+      <div class="exp-content">
+        <h3>AMO Labs</h3>
+        <div class="exp-role">Machine Learning Engineer</div>
+        <p>Anomaly detection for automotive using CAN bus data. Realtime CAN network anomaly detection demo tool.</p>
+      </div>
+    </div>
+    <div class="exp-item">
+      <div class="exp-date">2016 — 2019</div>
+      <div class="exp-content">
+        <h3>Penta Security Systems</h3>
+        <div class="exp-role">Assistant Manager</div>
+        <p>CAN data analysis, Anomaly Detection using ML algorithms. C-ITS Authentication System development.</p>
+      </div>
+    </div>
+    <div class="exp-item">
+      <div class="exp-date">2012 — 2013</div>
+      <div class="exp-content">
+        <h3>KETI</h3>
+        <div class="exp-role">Researcher</div>
+        <p>Developer of IoT platform 'Mobius'. System engineering for IoT infrastructure.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education">
+    <div class="section-header">
+      <span class="section-label">Education</span>
+      <h2 class="section-title">Academic</h2>
+    </div>
+    <div class="card-grid">
+      <div class="card">
+        <h3>Hankuk University of Foreign Studies</h3>
+        <p>Ph.D. Computer Vision (2022–2026) — GPA: 4.37/4.5</p>
+      </div>
+      <div class="card">
+        <h3>Hankuk University of Foreign Studies</h3>
+        <p>M.S. Information Engineering (2013–2015) — GPA: 4.43/4.5</p>
+      </div>
+      <div class="card">
+        <h3>Hankuk University of Foreign Studies</h3>
+        <p>B.S. Digital Info Engineering (2006–2013) — GPA: 4.07/4.5</p>
+      </div>
+      <div class="card" style="display: flex; flex-direction: column; gap: 12px; padding-bottom: 24px;">
+        <h3>Awards</h3>
+        <div class="award-list" style="display: flex; flex-direction: column; gap: 10px;">
+          <div style="display: flex; justify-content: space-between; align-items: center; font-size: 14px;">
+            <span style="color: var(--text-primary);">K-AI Manufacturing Data Analytics</span>
+            <span style="color: var(--text-quaternary);">2023</span>
+          </div>
+          <div style="display: flex; justify-content: space-between; align-items: center; font-size: 14px;">
+            <span style="color: var(--text-primary);">Derailment Prediction KRRI</span>
+            <span style="color: var(--text-quaternary);">2023</span>
+          </div>
+          <div style="display: flex; justify-content: space-between; align-items: center; font-size: 14px;">
+            <span style="color: var(--text-primary);">Post Corona Challenge MSIT</span>
+            <span style="color: var(--text-quaternary);">2020</span>
+          </div>
+          <div style="display: flex; justify-content: space-between; align-items: center; font-size: 14px;">
+            <span style="color: var(--text-primary);">Academic Excellence Award</span>
+            <span style="color: var(--text-quaternary);">2013</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Patents -->
+  <section id="patents">
+    <div class="section-header">
+      <span class="section-label">Intellectual Property</span>
+      <h2 class="section-title">Patents</h2>
+    </div>
+    <div class="card-grid">
+      <div class="card">
+        <h3>Semantic Segmentation</h3>
+        <p>Semantic segmentation of medical images using an organic seed. KR 1016902680000 (2016)</p>
+      </div>
+      <div class="card">
+        <h3>Abnormal Traffic Detection</h3>
+        <p>Abnormal traffic detection based on convolutional autoencoder. KR 1021511730000 (2018)</p>
+      </div>
+      <div class="card">
+        <h3>Groupware Monitoring</h3>
+        <p>Abnormal behavior detection for groupware users. KR 1021692550000 (2020)</p>
+      </div>
+      <div class="card">
+        <h3>CAN Signal Detection</h3>
+        <p>Signal detection based on controller area network. KR 1020190099372 (2021)</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <div class="section-header">
+      <span class="section-label">Technical Skills</span>
+      <h2 class="section-title">Tech Stack</h2>
+    </div>
+    <div class="card-grid">
+      <div class="skill-group">
+        <h3>Language &amp; Frameworks</h3>
+        <div class="chip-list">
+          <span class="chip">Python</span>
+          <span class="chip">PyTorch</span>
+          <span class="chip">TensorFlow</span>
+          <span class="chip">Keras</span>
+          <span class="chip">Docker</span>
+          <span class="chip">ITK/VTK</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>AI / ML</h3>
+        <div class="chip-list">
+          <span class="chip">ML Ops</span>
+          <span class="chip">RAG</span>
+          <span class="chip">Agent Architecture</span>
+          <span class="chip">Computer Vision</span>
+          <span class="chip">Time Series</span>
+          <span class="chip">Medical Imaging</span>
+          <span class="chip">Anomaly Detection</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Specialized</h3>
+        <div class="chip-list">
+          <span class="chip">Segmentation</span>
+          <span class="chip">Registration</span>
+          <span class="chip">Sinogram</span>
+          <span class="chip">CAN Bus</span>
+          <span class="chip">C-ITS</span>
+          <span class="chip">IoT Platform</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Languages</h3>
+        <div class="chip-list">
+          <span class="chip">Korean</span>
+          <span class="chip">English</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Publications -->
+  <section id="publications">
+    <div class="section-header">
+      <span class="section-label">Publications</span>
+      <h2 class="section-title">Selected Papers</h2>
+    </div>
+
+    <div class="pub-card">
+      <h3>Frequency of Interest-based Noise Attenuation for Anomaly Detection Performance</h3>
+      <div class="pub-meta">IEEE — 2023</div>
+    </div>
+    <div class="pub-card">
+      <h3>Cost-Effective Auto-Encoder for Motor Anomaly Detection on Edge Devices</h3>
+      <div class="pub-meta">IEEE Eurasia Conference on IoT, Communication and Engineering (EI) — 2021</div>
+    </div>
+    <div class="pub-card">
+      <h3>Attention! Is Recycling Artificial Neural Network Effective?</h3>
+      <div class="pub-meta">IEEE TPE — 2022</div>
+    </div>
+    <div class="pub-card">
+      <h3>Anomaly Detection for HTTP Using Convolutional Autoencoders</h3>
+      <div class="pub-meta">IEEE Access — 2018</div>
+    </div>
+    <div class="pub-card">
+      <h3>Graph Cut Segmentation Based on Local Constraint</h3>
+      <div class="pub-meta">IPIU — 2015</div>
+    </div>
+    <div class="pub-card">
+      <h3>Semi-automatic Knee Cartilage Segmentation by Seed Transfer</h3>
+      <div class="pub-meta">ICECCE — 2020</div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="section-header">
+      <span class="section-label">Contact</span>
+      <h2 class="section-title">Get in Touch</h2>
+    </div>
+    <div class="contact-grid">
+      <a href="mailto:kjm1559@gmail.com" class="contact-item">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+        kjm1559@gmail.com
+      </a>
+      <a href="https://kr.linkedin.com/in/myungjin-kim-2b2215164" target="_blank" class="contact-item">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+        LinkedIn
+      </a>
+      <a href="https://scholar.google.com/citations?user=DcCbsc8AAAAJ&hl=ko" target="_blank" class="contact-item">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 19v-2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><path d="M4 13v-2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><path d="M4 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><circle cx="18" cy="18" r="3"></circle><path d="M22 22l-4-4"></path></svg>
+        Google Scholar
+      </a>
+      <a href="https://github.com/kjm1559" target="_blank" class="contact-item">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+        GitHub
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2026 Myungjin Kim. All rights reserved.
+  </footer>
+
+  <script>
+  function toggleMenu() {
+    document.querySelector('.nav-links').classList.toggle('open');
+  }
+  </script>
+
+</body>
+</html>
