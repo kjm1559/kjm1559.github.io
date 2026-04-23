@@ -25,6 +25,96 @@
       --radius-panel: 24px;
     }
 
+    /* Dark mode — auto based on OS setting */
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0d0d0d;
+        --panel: #171717;
+        --surface: #171717;
+        --surface-hover: #222222;
+        --text-primary: #f0f0f0;
+        --text-secondary: #d4d4d4;
+        --text-tertiary: #a3a3a3;
+        --text-quaternary: #737373;
+        --brand: #18E299;
+        --accent: #18E299;
+        --accent-hover: #2dd4a8;
+        --border: rgba(255,255,255,0.08);
+        --border-subtle: rgba(255,255,255,0.05);
+      }
+
+      html {
+        color-scheme: dark;
+      }
+
+      body {
+        transition: background-color 0.3s, color 0.3s;
+      }
+
+      nav {
+        background: rgba(13,13,13,0.95);
+        border-bottom-color: var(--border-subtle);
+      }
+
+      .hero {
+        background: linear-gradient(180deg, #0d0d0d 0%, #111111 100%);
+      }
+
+      .hero-label {
+        background: rgba(24, 226, 153, 0.12);
+        border-color: rgba(24, 226, 153, 0.25);
+      }
+
+      .card {
+        background: var(--panel);
+        border-color: var(--border);
+      }
+
+      .card:hover {
+        border-color: var(--brand);
+      }
+
+      .pub-card {
+        background: var(--panel);
+        border-color: var(--border);
+      }
+
+      footer {
+        border-top-color: var(--border-subtle);
+      }
+
+      .mobis-card-footer {
+        border-top-color: var(--border);
+      }
+
+      .nav-links a.active {
+        background: rgba(24, 226, 153, 0.15);
+      }
+
+      .exp-item:hover {
+        border-color: var(--brand);
+      }
+
+      .nav-links {
+        background: rgba(13,13,13,0.98);
+      }
+
+      .contact-item {
+        background: var(--panel);
+        border-color: var(--border);
+      }
+
+      .chip {
+        background: var(--panel);
+        border-color: rgba(255,255,255,0.08);
+      }
+
+      .exp-date {
+        background: var(--panel);
+        border-color: var(--border);
+      }
+    }
+
     * { margin: 0; padding: 0; box-sizing: border-box; }
 
     body {
