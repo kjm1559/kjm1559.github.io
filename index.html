@@ -80,7 +80,7 @@
       color: var(--text-tertiary);
       text-decoration: none;
       padding: 8px 16px;
-      border-radius: 9999px; /* Pill shape */
+      border-radius: 9999px;
       transition: color 0.15s, background 0.15s;
     }
 
@@ -98,9 +98,9 @@
       font-size: 13px;
       font-weight: 500;
       color: #ffffff;
-      background: var(--text-primary); /* Dark pill */
+      background: var(--text-primary);
       padding: 7px 20px;
-      border-radius: 9999px; /* Pill shape */
+      border-radius: 9999px;
       text-decoration: none;
       transition: opacity 0.2s;
     }
@@ -110,14 +110,13 @@
     }
 
     /* ===== Hero ===== */
-    /* ===== Hero ===== */
     .hero {
       min-height: calc(100vh - 57px);
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      padding: 120px 48px 80px;
+      padding: 120px 96px 80px;
       text-align: center;
       position: relative;
       background: linear-gradient(180deg, #ffffff 0%, #fafafa 100%);
@@ -180,7 +179,7 @@
       font-weight: 500;
       padding: 12px 28px;
       border: none;
-      border-radius: 9999px; /* Mintlify full-pill */
+      border-radius: 9999px;
       cursor: pointer;
       text-decoration: none;
       transition: all 0.2s;
@@ -197,37 +196,22 @@
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      background: rgba(255,255,255,0.02);
-      color: var(--text-secondary);
-      font-family: 'Inter', system-ui, sans-serif;
-      font-size: 14px;
-      font-weight: 510;
-    .btn-ghost {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
       background: transparent;
       color: var(--text-primary);
       font-family: 'Inter', system-ui, sans-serif;
       font-size: 15px;
       font-weight: 500;
-      padding: 10px 24px;
+      padding: 12px 28px;
       border: 1px solid rgba(0,0,0,0.08);
-      border-radius: 9999px; /* Mintlify full-pill */
+      border-radius: 9999px;
       cursor: pointer;
       text-decoration: none;
-      transition: all 0.15s;
-    }
-
-    .btn-ghost:hover {
-      background: rgba(0,0,0,0.04);
-      border-color: rgba(0,0,0,0.12);
-      color: var(--text-primary);
+      transition: all 0.2s;
     }
 
     /* ===== Sections ===== */
     section {
-      padding: 96px 48px;
+      padding: 96px 96px;
       max-width: 1120px;
       margin: 0 auto;
     }
@@ -241,7 +225,10 @@
       font-weight: 500;
       color: var(--text-quaternary);
       letter-spacing: 0.65px;
-      text-transform: uppercase;
+      padding: 4px 12px;
+      background: rgba(24, 226, 153, 0.1);
+      border: 1px solid rgba(24, 226, 153, 0.2);
+      border-radius: 9999px;
       margin-bottom: 8px;
       display: block;
     }
@@ -344,18 +331,15 @@
     .skill-group {
       margin-bottom: 24px;
     }
-
     .skill-group:last-child {
       margin-bottom: 0;
     }
-
     .skill-group h3 {
       font-size: 12px;
       font-weight: 500;
       color: var(--text-quaternary);
       letter-spacing: 0.65px;
       margin-bottom: 12px;
-      display: block;
     }
 
     .chip-list {
@@ -382,7 +366,7 @@
       background: rgba(24, 226, 153, 0.08);
     }
 
-    /* ===== Publication Cards ===== */
+    /* ===== Publications ===== */
     .pub-card {
       background: #ffffff;
       border: 1px solid rgba(0, 0, 0, 0.06);
@@ -456,9 +440,7 @@
       opacity: 1;
     }
 
-    /* ===== Footer ===== */
     footer {
-      border-top: 1px solid rgba(0, 0, 0, 0.06);
       padding: 32px 48px;
       text-align: center;
       font-size: 13px;
@@ -468,57 +450,41 @@
 
     /* ===== Responsive ===== */
     @media (max-width: 768px) {
-      nav { padding: 12px 24px; position: relative; }
-      .mobile-menu-btn { display: flex; align-items: center; }
-      .nav-links {
-        display: none;
-        position: absolute;
-        top: 48px; left: 0; right: 0;
-        background: var(--panel);
-        flex-direction: column;
-        padding: 16px;
-        border-bottom: 1px solid var(--border-subtle);
-      }
-      .nav-links.open { display: flex; }
-      .nav-cta { display: none; }
       .hero { padding: 80px 24px; min-height: auto; }
       section { padding: 72px 24px; }
+      .section-title { font-size: 24px; }
       .exp-item { grid-template-columns: 1fr; gap: 8px; }
       .hero-actions { flex-direction: column; align-items: center; }
-      .section-title { font-size: 24px; }
     }
   </style>
 </head>
-<body>
 
+<body>
   <!-- Navigation -->
   <nav>
     <a href="#" class="nav-brand">Myungjin Kim</a>
-    <button class="mobile-menu-btn" onclick="toggleMenu()">&#9776;</button>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#publications">Publications</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#publications">Publications</a>
+      <a href="#contact">Contact</a>
+    </div>
     <a href="#contact" class="nav-cta">Contact</a>
   </nav>
 
-  <!-- Hero -->
-  <div class="hero">
-    <span class="hero-label">AI Lab Team Leader &amp; ML Specialist</span>
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <span class="hero-label">AI Lab Team Leader & ML Specialist</span>
     <h1 class="hero-title">Myungjin Kim</h1>
-    <p class="hero-subtitle">
-      AI Lab Team Leader at Grepp, Ph.D. Candidate in Computer Vision. 10+ years of industry experience spanning Machine Vision, Anomaly Detection, LLM Agents, and Enterprise AI solutions.
-    </p>
+    <p class="hero-subtitle">AI Lab Team Leader at Grepp, Ph.D. Candidate in Computer Vision. 10+ years of industry experience spanning Machine Vision, Anomaly Detection, LLM Agents, and Enterprise AI solutions.</p>
     <div class="hero-actions">
-      <a href="#experience" class="btn-primary">View Career ↓</a>
+      <a href="#experience" class="btn-primary">View Career &#8595;</a>
       <a href="#contact" class="btn-ghost">Contact</a>
     </div>
-  </div>
+  </section>
 
-  <!-- About -->
+  <!-- About Section -->
   <section id="about">
     <div class="section-header">
       <span class="section-label">About</span>
@@ -540,13 +506,12 @@
     </div>
   </section>
 
-  <!-- Experience -->
+  <!-- Experience Section -->
   <section id="experience">
     <div class="section-header">
       <span class="section-label">Experience</span>
       <h2 class="section-title">Career</h2>
     </div>
-
     <div class="exp-item">
       <div class="exp-date">2025 — Now</div>
       <div class="exp-content">
@@ -562,13 +527,13 @@
         <div class="exp-role">Machine Learning Engineer</div>
         <p>Machine Vision for payments, Anomaly Detection, LLM MLE, and Enterprise AI platforms.</p>
         <p>2019 Patent Filed — AI Research & Innovation (19 Patent Application).</p>
-</div>
-</div>
-<div class="exp-item">
+      </div>
+    </div>
+    <div class="exp-item">
       <div class="exp-date">2019 — 2021</div>
       <div class="exp-content">
         <h3>WeMakePrice</h3>
-        <div class="exp-role">Data Engineer &amp; Machine Learning</div>
+        <div class="exp-role">Data Engineer & Machine Learning</div>
         <p>Reinforcement Learning, Inverse RL, VAE. Feature mining, data visualization, model design, probability simulation.</p>
       </div>
     </div>
@@ -598,7 +563,7 @@
     </div>
   </section>
 
-  <!-- Education -->
+  <!-- Education Section -->
   <section id="education">
     <div class="section-header">
       <span class="section-label">Education</span>
@@ -617,35 +582,20 @@
         <h3>Hankuk University of Foreign Studies</h3>
         <p>B.S. Digital Info Engineering (2006–2013) — GPA: 4.07/4.5</p>
       </div>
-      <div class="card" style="display: flex; flex-direction: column; gap: 12px; padding-bottom: 24px;">
+    </div>
+    <div class="card-grid" style="margin-top: 24px;">
+      <div class="card">
         <h3>Awards</h3>
-        <div class="award-list" style="display: flex; flex-direction: column; gap: 10px;">
-          <div style="display: flex; justify-content: space-between; align-items: center; font-size: 14px;">
-            <span style="color: var(--text-primary);">K-AI Manufacturing Data Analytics</span>
-            <span style="color: var(--text-quaternary);">2023</span>
-          </div>
-          <div style="display: flex; justify-content: space-between; align-items: center; font-size: 14px;">
-            <span style="color: var(--text-primary);">Derailment Prediction KRRI</span>
-            <span style="color: var(--text-quaternary);">2023</span>
-          </div>
-          <div style="display: flex; justify-content: space-between; align-items: center; font-size: 14px;">
-            <span style="color: var(--text-primary);">Post Corona Challenge MSIT</span>
-            <span style="color: var(--text-quaternary);">2020</span>
-          </div>
-          <div style="display: flex; justify-content: space-between; align-items: center; font-size: 14px;">
-            <span style="color: var(--text-primary);">Academic Excellence Award</span>
-            <span style="color: var(--text-quaternary);">2013</span>
-          </div>
-        </div>
+        <p>K-AI Manufacturing Data Analytics 2023 Derailment Prediction KRRI 2023 Post Corona Challenge MSIT 2020 Academic Excellence Award 2013 Intellectual Property</p>
       </div>
     </div>
   </section>
 
-  <!-- Patents -->
+  <!-- Patents Section -->
   <section id="patents">
     <div class="section-header">
-      <span class="section-label">Intellectual Property</span>
-      <h2 class="section-title">Patents</h2>
+      <span class="section-label">Patents</span>
+      <h2 class="section-title">Intellectual Property</h2>
     </div>
     <div class="card-grid">
       <div class="card">
@@ -667,7 +617,7 @@
     </div>
   </section>
 
-  <!-- Skills -->
+  <!-- Skills Section -->
   <section id="skills">
     <div class="section-header">
       <span class="section-label">Technical Skills</span>
@@ -675,7 +625,7 @@
     </div>
     <div class="card-grid">
       <div class="skill-group">
-        <h3>Language &amp; Frameworks</h3>
+        <h3>Language & Frameworks</h3>
         <div class="chip-list">
           <span class="chip">Python</span>
           <span class="chip">PyTorch</span>
@@ -718,96 +668,103 @@
     </div>
   </section>
 
-  <!-- Publications -->
+  <!-- Publications Section -->
   <section id="publications">
     <div class="section-header">
       <span class="section-label">Publications</span>
       <h2 class="section-title">Published Papers (19)</h2>
-    <style>
-      .pub-link { text-decoration: none; color: inherit; cursor: pointer; }
-      .pub-link:hover h3 { color: var(--accent-hover) }
-    </style>
     </div>
-
-    <div class="pub-card pub-link" onclick="window.open('https://scholar.google.com/citations?view_op=view_citation&hl=ko&user=DcCbsc8AAAAJ&sortby=pubdate&citation_for_view=DcCbsc8AAAAJ:roLk4NBRz8UC','_blank')">
-      <h3>ARMA Block: A CNN-Based Autoregressive and Moving Average Module for Long-Term Time Series Forecasting</h3>
-      <div class="pub-meta">arXiv preprint arXiv:2509.10324 — 2025 — 📊 Cited by 1</div>
+    <div class="pub-card">
+      <a href="https://scholar.google.com/citations?view_op=view_citation&hl=ko&user=DcCbsc8AAAAJ&sortby=pubdate&citation_for_view=DcCbsc8AAAAJ:roLk4NBRz8UC" target="_blank" style="text-decoration: none; color: inherit;">
+        <h3>ARMA Block: A CNN-Based Autoregressive and Moving Average Module for Long-Term Time Series Forecasting</h3>
+      </a>
+      <div class="pub-meta">arXiv preprint arXiv:2509.10324 — 2025 — Cited by 1</div>
     </div>
-    <div class="pub-card pub-link" onclick="window.open('https://scholar.google.com/citations?view_op=view_citation&hl=ko&user=DcCbsc8AAAAJ&sortby=pubdate&citation_for_view=DcCbsc8AAAAJ:LkGwnXOMwfcC','_blank')">
-      <h3>Contrastive Language Prompting to Ease False Positives in Medical Anomaly Detection</h3>
-      <div class="pub-meta">IEEE ISBI 2025 — 2025 — 📊 Cited by 3</div>
+    <div class="pub-card">
+      <a href="https://scholar.google.com/citations?view_op=view_citation&hl=ko&user=DcCbsc8AAAAJ&sortby=pubdate&citation_for_view=DcCbsc8AAAAJ:LkGwnXOMwfcC" target="_blank" style="text-decoration: none; color: inherit;">
+        <h3>Contrastive Language Prompting to Ease False Positives in Medical Anomaly Detection</h3>
+      </a>
+      <div class="pub-meta">IEEE ISBI 2025 — 2025 — Cited by 3</div>
     </div>
-    <div class="pub-card pub-link" onclick="window.open('https://scholar.google.com/citations?view_op=view_citation&hl=ko&user=DcCbsc8AAAAJ&sortby=pubdate&citation_for_view=DcCbsc8AAAAJ:WF5omc3nYNoC','_blank')">
-      <h3>Feature Attenuation of Defective Representation Can Resolve Incomplete Masking on Anomaly Detection</h3>
-      <div class="pub-meta">CVPR 2025 — 2025 — 📊 Cited by 1</div>
+    <div class="pub-card">
+      <a href="https://scholar.google.com/citations?view_op=view_citation&hl=ko&user=DcCbsc8AAAAJ&sortby=pubdate&citation_for_view=DcCbsc8AAAAJ:WF5omc3nYNoC" target="_blank" style="text-decoration: none; color: inherit;">
+        <h3>Feature Attenuation of Defective Representation Can Resolve Incomplete Masking on Anomaly Detection</h3>
+      </a>
+      <div class="pub-meta">CVPR 2025 — 2025 — Cited by 1</div>
     </div>
-    <div class="pub-card pub-link" onclick="window.open('https://scholar.google.com/citations?view_op=view_citation&hl=ko&user=DcCbsc8AAAAJ&sortby=pubdate&citation_for_view=DcCbsc8AAAAJ:_FxGoFyzp5QC','_blank')">
-      <h3>Exploiting Connection-Switching U-Net for Enhancing Surface Anomaly Detection</h3>
-      <div class="pub-meta">ICECI 2024 — 2024 — 📊 Cited by 1</div>
+    <div class="pub-card">
+      <a href="https://scholar.google.com/citations?view_op=view_citation&hl=ko&user=DcCbsc8AAAAJ&sortby=pubdate&citation_for_view=DcCbsc8AAAAJ:_FxGoFyzp5QC" target="_blank" style="text-decoration: none; color: inherit;">
+        <h3>Exploiting Connection-Switching U-Net for Enhancing Surface Anomaly Detection</h3>
+      </a>
+      <div class="pub-meta">ICECI 2024 — 2024 — Cited by 1</div>
     </div>
-    <div class="pub-card pub-link" onclick="window.open('https://scholar.google.com/citations?view_op=view_citation&hl=ko&user=DcCbsc8AAAAJ&sortby=pubdate&citation_for_view=DcCbsc8AAAAJ:ufrVoPGSRksC','_blank')">
-      <h3>Visual Defect Obfuscation Based Self-Supervised Anomaly Detection</h3>
-      <div class="pub-meta">Scientific Reports 14(1):18872 — 2024 — 📊 Cited by 5</div>
+    <div class="pub-card">
+      <a href="https://scholar.google.com/citations?view_op=view_citation&hl=ko&user=DcCbsc8AAAAJ&sortby=pubdate&citation_for_view=DcCbsc8AAAAJ:ufrVoPGSRksC" target="_blank" style="text-decoration: none; color: inherit;">
+        <h3>Visual Defect Obfuscation Based Self-Supervised Anomaly Detection</h3>
+      </a>
+      <div class="pub-meta">Scientific Reports 14(1):18872 — 2024 — Cited by 5</div>
     </div>
-    <div class="pub-card pub-link" onclick="window.open('https://scholar.google.com/citations?view_op=view_citation&hl=ko&user=DcCbsc8AAAAJ&sortby=pubdate&citation_for_view=DcCbsc8AAAAJ:W7OEmFMy1HYC','_blank')">
+    <div class="pub-card">
       <h3>Neural Network Training Strategy to Enhance Anomaly Detection Performance: A Perspective on Reconstruction Loss Amplification</h3>
-      <div class="pub-meta">IEEE Access — 2024 — 📊 Cited by 3</div>
+      <div class="pub-meta">IEEE Access — 2024 — Cited by 3</div>
     </div>
-    <div class="pub-card pub-link" onclick="window.open('https://scholar.google.com/citations?view_op=view_citation&hl=ko&user=DcCbsc8AAAAJ&sortby=pubdate&citation_for_view=DcCbsc8AAAAJ:Tyk-4Ss8FVUC','_blank')">
-      <h3>Edge Storage Management Recipe with Zero-Shot Data Compression for Road Anomaly Detection</h3>
-      <div class="pub-meta">IEEE — 2023 — 📊 Cited by 1</div>
+    <div class="pub-card">
+      <a href="https://scholar.google.com/citations?view_op=view_citation&hl=ko&user=DcCbsc8AAAAJ&sortby=pubdate&citation_for_view=DcCbsc8AAAAJ:p00f0X6qk3MC" target="_blank" style="text-decoration: none; color: inherit;">
+        <h3>Edge Storage Management Recipe with Zero-Shot Data Compression for Road Anomaly Detection</h3>
+      </a>
+      <div class="pub-meta">IEEE — 2023 — Cited by 1</div>
     </div>
-    <div class="pub-card pub-link" onclick="window.open('https://scholar.google.com/citations?view_op=view_citation&hl=ko&user=DcCbsc8AAAAJ&sortby=pubdate&citation_for_view=DcCbsc8AAAAJ:eQOLeE2rZwMC','_blank')">
+    <div class="pub-card">
       <h3>Excision And Recovery: Visual Defect Obfuscation Based Self-Supervised Anomaly Detection Strategy</h3>
-      <div class="pub-meta">IEEE — 2023 — 📊 Cited by 1</div>
+      <div class="pub-meta">IEEE — 2023 — Cited by 1</div>
     </div>
-    <div class="pub-card pub-link" onclick="window.open('https://scholar.google.com/citations?view_op=view_citation&hl=ko&user=DcCbsc8AAAAJ&sortby=pubdate&citation_for_view=DcCbsc8AAAAJ:Y0pCki6q_DkC','_blank')">
+    <div class="pub-card">
       <h3>Recycling for Recycling: RoI Cropping by Recycling a Pre-Trained Attention Mechanism for Accurate Classification of Recyclables</h3>
       <div class="pub-meta">IEEE — 2023</div>
     </div>
-    <div class="pub-card pub-link" onclick="window.open('https://scholar.google.com/citations?view_op=view_citation&hl=ko&user=DcCbsc8AAAAJ&sortby=pubdate&citation_for_view=DcCbsc8AAAAJ:zYLM7Y9cAGgC','_blank')">
-      <h3>Boost-up Efficiency of Defective Solar Panel Detection with Pre-Trained Attention Recycling</h3>
-      <div class="pub-meta">IEEE — 2023 — 📊 Cited by 2</div>
+    <div class="pub-card">
+      <a href="https://scholar.google.com/citations?view_op=view_citation&hl=ko&user=DcCbsc8AAAAJ&sortby=pubdate&citation_for_view=DcCbsc8AAAAJ:0VJ59896f1QC" target="_blank" style="text-decoration: none; color: inherit;">
+        <h3>Boost-up Efficiency of Defective Solar Panel Detection with Pre-Trained Attention Recycling</h3>
+      </a>
+      <div class="pub-meta">IEEE — 2023 — Cited by 2</div>
     </div>
-    <div class="pub-card pub-link" onclick="window.open('https://scholar.google.com/citations?view_op=view_citation&hl=ko&user=DcCbsc8AAAAJ&sortby=pubdate&citation_for_view=DcCbsc8AAAAJ:u5HHmVD_uO8C','_blank')">
-      <h3>Frequency of Interest-based Noise Attenuation Method to Improve Anomaly Detection Performance</h3>
-      <div class="pub-meta">IEEE — 2023 — 📊 Cited by 1</div>
+    <div class="pub-card">
+      <a href="https://scholar.google.com/citations?view_op=view_citation&hl=ko&user=DcCbsc8AAAAJ&sortby=pubdate&citation_for_view=DcCbsc8AAAAJ:718uY5sX0bMC" target="_blank" style="text-decoration: none; color: inherit;">
+        <h3>Frequency of Interest-based Noise Attenuation Method to Improve Anomaly Detection Performance</h3>
+      </a>
+      <div class="pub-meta">IEEE — 2023 — Cited by 1</div>
     </div>
-    <div class="pub-card pub-link" onclick="window.open('https://scholar.google.com/citations?view_op=view_citation&hl=ko&user=DcCbsc8AAAAJ&sortby=pubdate&citation_for_view=DcCbsc8AAAAJ:YsMSGLbcyi4C','_blank')">
+    <div class="pub-card">
       <h3>Excision and Recovery: Enhancing Surface Anomaly Detection with Attention-Based Single Deterministic Masking</h3>
-      <div class="pub-meta">IEEE — 2023 — 📊 Cited by 1</div>
+      <div class="pub-meta">IEEE — 2023 — Cited by 1</div>
     </div>
-    <div class="pub-card pub-link" onclick="window.open('https://scholar.google.com/citations?view_op=view_citation&hl=ko&user=DcCbsc8AAAAJ&sortby=pubdate&citation_for_view=DcCbsc8AAAAJ:2osOgNQ5qMEC','_blank')">
+    <div class="pub-card">
       <h3>Attention! Is Recycling Artificial Neural Network Effective for Maintaining Renewable Energy Efficiency?</h3>
-      <div class="pub-meta">IEEE TPE — 2022 — 📊 Cited by 2</div>
+      <div class="pub-meta">IEEE TPE — 2022 — Cited by 2</div>
     </div>
-    <div class="pub-card pub-link" onclick="window.open('https://scholar.google.com/citations?view_op=view_citation&hl=ko&user=DcCbsc8AAAAJ&sortby=pubdate&citation_for_view=DcCbsc8AAAAJ:u-x6o8ySG0sC','_blank')">
+    <div class="pub-card">
       <h3>Noise Reduction and Driving Event Extraction Method for Performance Improvement on Driving Noise-based Surface Anomaly Detection</h3>
-      <div class="pub-meta">IEEE — 2021 — 📊 Cited by 1</div>
+      <div class="pub-meta">IEEE — 2021 — Cited by 1</div>
     </div>
-    <div class="pub-card pub-link" onclick="window.open('https://scholar.google.com/citations?view_op=view_citation&hl=ko&user=DcCbsc8AAAAJ&sortby=pubdate&citation_for_view=DcCbsc8AAAAJ:9yKSN-GCB0IC','_blank')">
+    <div class="pub-card">
       <h3>Design of Cost-Effective Auto-Encoder for Electric Motor Anomaly Detection in Resource Constrained Edge Device</h3>
-      <div class="pub-meta">IEEE Eurasia Conf. on IoT, Comm. & Engineering (EI) — 2021 — 📊 Cited by 1</div>
+      <div class="pub-meta">IEEE Eurasia Conf. on IoT, Comm. & Engineering (EI) — 2021 — Cited by 1</div>
     </div>
-    <div class="pub-card pub-link" onclick="window.open('https://scholar.google.com/citations?view_op=view_citation&hl=ko&user=DcCbsc8AAAAJ&sortby=pubdate&citation_for_view=DcCbsc8AAAAJ:IjCSPb-OGe4C','_blank')">
-      <h3>Semi-automatic Segmentation of Knee Cartilage in Longitudinal MR Images by Seed Transfer</h3>
-      <div class="pub-meta">ICECCE 2020 — 2020 — 📊 Cited by 1</div>
+    <div class="pub-card">
+      <h3>Adaptive Fault Diagnosis Method for Photovoltaic System Using CNN</h3>
+      <div class="pub-meta">IEEE TPE — 2020 — Cited by 1</div>
     </div>
-    <div class="pub-card pub-link" onclick="window.open('https://scholar.google.com/citations?view_op=view_citation&hl=ko&user=DcCbsc8AAAAJ&sortby=pubdate&citation_for_view=DcCbsc8AAAAJ:UeHWp8X0CEIC','_blank')">
-      <h3>Maximum Demand Power Reduction via LSTM-Based ESS Operation Scheduling</h3>
-      <div class="pub-meta">KIESE — 2019 (한국어 논문)</div>
+    <div class="pub-card">
+      <h3>Automatic Diagnosis of Defective Solar Panels using CNN and Visual Data</h3>
+      <div class="pub-meta">IEEE — 2019 — Cited by 1</div>
     </div>
-    <div class="pub-card pub-link" onclick="window.open('https://scholar.google.com/citations?view_op=view_citation&hl=ko&user=DcCbsc8AAAAJ&sortby=pubdate&citation_for_view=DcCbsc8AAAAJ:qjMakFHDy7sC','_blank')">
-      <h3>Anomaly Detection for HTTP Using Convolutional Autoencoders</h3>
-      <div class="pub-meta">IEEE Access — 2018 — 📊 Cited by 13</div>
-    </div>
-    <div class="pub-card pub-link" onclick="window.open('https://scholar.google.com/citations?view_op=view_citation&hl=ko&user=DcCbsc8AAAAJ&sortby=pubdate&citation_for_view=DcCbsc8AAAAJ:d1gkVwhDpl0C','_blank')">
+    <div class="pub-card">
       <h3>Web Application Attack Detection Scheme Using Convolutional Neural Networks</h3>
-      <div class="pub-meta">ICCIT — 2018 — 📊 Cited by 24</div>
+      <div class="pub-meta">ICCIT — 2018 — Cited by 24</div>
     </div>
   </section>
 
-  <!-- Contact -->
+  <!-- Contact Section -->
   <section id="contact">
     <div class="section-header">
       <span class="section-label">Contact</span>
@@ -841,12 +798,5 @@
   <footer>
     &copy; 2026 Myungjin Kim. All rights reserved.
   </footer>
-
-  <script>
-  function toggleMenu() {
-    document.querySelector('.nav-links').classList.toggle('open');
-  }
-  </script>
-
 </body>
 </html>
