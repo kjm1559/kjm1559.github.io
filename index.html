@@ -43,6 +43,58 @@
         --border-subtle: rgba(255,255,255,0.05);
       }
 
+      /* Override hardcoded white backgrounds in dark mode */
+      .card,
+      .pub-card,
+      .contact-item {
+        background: var(--panel) !important;
+      }
+
+      .contact-item:hover {
+        background: var(--surface-hover) !important;
+      }
+
+      nav {
+        background: rgba(13,13,13,0.95) !important;
+      }
+
+      .hero {
+        background: linear-gradient(180deg, #0d0d0d 0%, #111111 100%) !important;
+      }
+
+      .hero-actions .btn-primary {
+        background: var(--panel) !important;
+        color: var(--text-primary) !important;
+        border-color: var(--border) !important;
+      }
+
+      .btn-primary:hover {
+        background: var(--surface-hover) !important;
+        box-shadow: rgba(255,255,255,0.1) 0px 4px 8px !important;
+      }
+
+      .mobile-menu-btn {
+        color: var(--text-primary) !important;
+      }
+
+      .exp-item {
+        border-color: var(--border) !important;
+      }
+
+      .exp-item:first-child {
+        border-top-color: var(--border) !important;
+      }
+
+      /* Fix mobile nav for dark mode */
+      .nav-links {
+        background: rgba(13,13,13,0.98) !important;
+      }
+
+      /* Fix icons in contact items for dark mode */
+      .contact-item svg {
+        stroke: var(--text-tertiary);
+      }
+
       html {
         color-scheme: dark;
       }
