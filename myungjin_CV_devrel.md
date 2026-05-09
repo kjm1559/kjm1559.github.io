@@ -61,7 +61,7 @@ AI Technical Leader and Evangelist with a proven track record in **Manufacturing
 
 #### 3. Data Science & Standardization
 - **Peptide Analysis** & **Health Age Prediction**: Developed statistical models and APIs for medical/sensor data.
-- **19 Patent Applications Filed** (Contributions to visual QA and sensor anomaly detection).
+- **46 Patent Applications Filed** (Contributions to visual QA and sensor anomaly detection).
 
 ### **Machine Learning Researcher** — **Wemakeprice** | *2019 - 2021*
 - **AI Baseball Director**: Developed reinforcement learning and series prediction models (RL + LSTM) to replace human director workflows. Built the inference server using Kubeflow.
@@ -85,7 +85,7 @@ AI Technical Leader and Evangelist with a proven track record in **Manufacturing
 - *(Plus 6 additional conference/symposium papers on sensor fusion, edge AI, and renewable energy efficiency)*
 
 ### **Patents** (55 Total — Market Authority)
-- **52 Filed** (Including 19 at SK Planet, 6 at Grepp, etc.)
+- **52 Filed** (46 at SK Planet, 6 at Grepp)
 - **3 Granted** (Penta Security Systems)
 
 ---
