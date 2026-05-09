@@ -146,7 +146,7 @@ Adept Machine Learning Developer with a proven track record at SK Planet (2021-2
 
 ## PATENTS
 
-- **46 Patents** — (19 applications at SK Planet, 3 granted at Penta Security, 6 filed at Grepp)
+- **55 Patents Total** — 52 filed (19 at SK Planet, 33 elsewhere), 3 granted (at Penta Security)
 
 ---
 
