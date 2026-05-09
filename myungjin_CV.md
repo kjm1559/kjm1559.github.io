@@ -4,62 +4,122 @@ title: Myungjin Kim - CV
 
 # Myungjin Kim
 
-**Senior AI Engineer | AI Lab Team Lead**
+**Machine Learning Engineer**
 
-📞 +82. xx | 📧 kjm1559@gmail.com | 🔗 [LinkedIn](http://www.linkedin.com/in/kjm1559) | 🐙 [github.com/kjm1559](https://github.com/kjm1559)
+📞 +82 10 9833 6944 | 📧 kjm1559@gmail.com | 🔗 [LinkedIn](http://www.linkedin.com/in/kjm1559) | 🐙 [GitHub](https://github.com/kjm1559) | 🎓 [Google Scholar](https://scholar.google.com/citations?user=DcCbsc8AAAAJ&hl=ko) | 🏆 [Kaggle Expert](https://www.kaggle.com/kjm1559)
 
 ---
 
-## PROFILE
+## SUMMARY
 
-**Deep AI Model Researcher & Engineering Leader** with a proven track record of managing AI Lab teams in industrial environments. Expert in time-series forecasting, autonomous AI agents, and Small Language Models (SLM) optimization bridging the gap between cutting-edge academic research and scalable industrial applications. Delivering measurable business impact through efficient model architectures and multi-modal LLM solutions.
+Adept Machine Learning Developer with a proven track record at SK Planet, specializing in anomaly detection and predictive modeling. Recently, I have been working as a Prompt Engineer on the Aster project, developing a personal AI assistant powered by large language models. In this role, I focus on developing and enhancing each feature, analyzing individual features, and generating robust datasets. I have extensive experience working with both structured (including image data) and unstructured data, equipping me to handle a wide variety of data challenges effectively. Additionally, I quickly adapt to new environments, ensuring a smooth transition and immediate productivity.
 
 ---
 
 ## PROFESSIONAL EXPERIENCE
 
-### **AI Lab Team Lead (Grepp AI Lab)** | *2024.04 - Present*
-- Lead a team of AI researchers and engineers, establishing the technical roadmap and architectural decisions for industrial AI products.
-- **AI Proctoring Agent Development**: Led the end-to-end development of an autonomous proctoring agent using multi-modal LLMs, achieving significant reductions in manual oversight.
-- **SLM Optimization & Evaluation**: Directed the evaluation of **Small Language Models** (Image Captioning tasks), successfully balancing accuracy with inference speed on local hardware (Mac Mini M-series).
-- **Infrastructure & Mentorship**: Established robust PyTorch Lightning training pipelines, reducing experiment setup time by 40%. Mentoring junior researchers and managing full-cycle model deployments.
+### **Machine Learning Developer** — **SK Planet** | *2021 - Present*
 
-### **AI Researcher/Engineer** | *[Previous Company/University]* | *20xx - 2024*
-- Published **ARMAformer** (IEEE SPL), a novel attention mechanism for time-series forecasting that outperforms traditional Transformer-based models, driving a 15% increase in forecasting accuracy for key business metrics.
-- Developed a robust PyTorch Lightning training pipeline, reducing experiment setup time by 40% and accelerating time-to-market for AI-driven solutions.
-- Collaborated with cross-functional teams to integrate SOTA models into commercial products.
-- Published multiple papers and holds several patents in the field of deep learning and computer vision.
+#### Aster (LLM-Powered Personal AI Assistant)
+- **Prompt engineering** for intent classification from user utterances
+- Enhanced clarification quality and designed tool call logic for routing model behavior by LLM
+- Quantitative analysis for each module by LLM-as-a-judge
+- Designed prompt and logic to suggest plan
+- Developed testing and validation tools by Gradio
+- Developed data gathering system from Langfuse for test
+- Created demo feature presented at **MWC 2025**
+
+#### Computer Vision Projects
+- **Restoration of images** from non-linear speed and direction by line-scan camera
+  - Designed dewarping algorithm, functional API design, and design documentation
+- **Real-time de-identification module** using Yu-Net in OpenCV for surveillance cameras
+- **Smoke and fire detection**, chemical anomaly detection models with PyTorch
+  - Designed architecture for anomaly detection and instance segmentation
+  - Annotated segmentation labels using COCOAnnotator, designed evaluation experiments
+- **Weld anomaly detection**
+  - Developed defect annotator using Dash and Plotly, configured initial environment
+- **Particulate matter measurement correction model** using triplet losses
+  - Designed LSTM auto-encoder based architecture, researched performance on huge latent space
+
+#### Data Science & Analytics
+- **Peptide analysis**: Developed statistical model for diagnosis from LC-MSMS data, developed visualization module
+- **Health age prediction** from tabular data
+- **Parking availability check** model using simple CNN
+- **19 Patent Applications Filed**
+
+### **Machine Learning Researcher** — **Wemakeprice** | *2019 - 2021*
+
+- **AI Baseball Director** — Developed reinforcement learning and series prediction model
+  - Defined problem scope to replace human baseball director
+  - Developed data parsing logic and timing prediction for pitcher changes using **RL + LSTM** with TensorFlow
+  - Built inference server using Kubeflow
+
+### **Assistant Manager** — **Penta Security Systems Inc.** | *2016 - 2019*
+
+- **CAN network anomaly detection** using Auto-Encoder
+  - Designed LSTM auto-encoder, analyzed CAN protocol, developed parser and visualization tools (Dash, Plotly)
+- **URI anomaly detection** for Advanced Persistent Threat (APT)
+  - Designed auto-encoder models for anomaly detection, developed REST API using Flask
+- **C-ITS server development** — Validated SSL algorithms and chain revoke algorithms for V2X
+- **Software audits & test design** (TTA)
+- **3 Patents Granted**
+
+### **Commissioned Researcher** — **Korea Electronics Technology Institute (KETI)** | *2012 - 2013*
+
+- Developed **IoT platform Mobius** — Service programs by C on cross-compile environment
 
 ---
 
 ## EDUCATION
 
-**Ph.D. in Electrical Engineering** | *[University Name]* | *[Year]*
-- Relevant Coursework: Deep Learning, Computer Vision, Optimization Theory
-*Note: Expected Graduation: May 2026*
+### **Ph.D. in Computer Science** (Coursework Completed) — **Hankuk University of Foreign Studies** | *2022 - Present*
+- Major: Computer Vision
+- Focus: Deep learning basics, recommendation system, reinforcement learning
 
-**M.S. in Electrical Engineering** | *[University Name]* | *[Year]*
-- Relevant Coursework: Artificial Intelligence, Machine Learning, Statistical Signal Processing
+### **M.D.** — **Hankuk University of Foreign Studies** | *2013 - 2015*
+- Major: Medical Image Processing
+- Focus: Image processing, machine learning, random processes
 
----
-
-## TECHNICAL SKILLS
-
-- **AI & ML**: Deep Learning (CNNs, RNNs/Transformers, Time-Series), LLMs (Fine-tuning, Quantization), PyTorch, Lightning, HuggingFace Transformers
-- **Languages**: Python, C++, SQL, Shell Scripting
-- **Frameworks & Tools**: PyTorch, Lightning, Hugging Face Transformers, OpenCV, Docker, Git, MLflow, W&B
-- **Areas of Expertise**: Autonomous Agents, SLM Optimization, Time-Series Forecasting, Model Compression (Quantization)
+### **B.S.** — **Hankuk University of Foreign Studies** | *2006 - 2013*
+- Major: Digital Information Engineering
+- Focus: Computer science, signal processing, algorithms, data communication, data structures
 
 ---
 
-## PUBLICATIONS
+## AWARDS
 
-1. Myungjin Kim, et al. "ARMAformer: Attention-Based Mechanism for Efficient Time-Series Prediction." *IEEE Signal Processing Letters (SPL)*, 2026.
+- **Excellence Award** — K-Artificial Intelligence Manufacturing Data Analytics Competition (2023)
+  - Predicting defects by AI model and statistical analysis
+- **2nd Place** — Derailment Coefficient Prediction Model for Train Operation Safety Diagnostics (2023), KRRI
+  - Predicting derailment coefficient from unlabeled data
+- **Honorable Mention** — 2020 Post Corona Challenge (2020), Ministry of Science and ICT
+  - Predicting COVID-19 confirmers from overseas roaming information using TensorFlow LSTM
+- **Kaggle Competitions Expert**
+
+---
+
+## SKILLS
+
+- **Deep Learning Algorithms**: CNNs, RNNs/LSTMs, Auto-Encoders, Transformers, Instance Segmentation
+- **AI Frameworks**: PyTorch, TensorFlow, Kubeflow, Langfuse, Gradio
+- **Core Competencies**: Anomaly Detection, Machine Learning, Data Preprocessing, Unsupervised Learning, Model Evaluation
+- **Languages**: Python
+- **Tools**: OpenCV, Dash, Plotly, Flask, Swagger, COCOAnnotator
 
 ---
 
 ## PATENTS
 
-1. *[Title of Patent]* (Filed/Issued, *[Year]*)
+- **19 Patent Applications Filed** (SK Planet)
+- **3 Patents Granted** (Penta Security Systems)
+
+---
+
+## REFERENCES
+
+Available upon request
+
+**Co-worker Contact**:
+- YeongHyeon Park — +82 10 2871 7433
 
 ---
