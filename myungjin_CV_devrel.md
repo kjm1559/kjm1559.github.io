@@ -32,16 +32,9 @@ AI Technical Leader and Evangelist with a proven track record in **Manufacturing
 ## PROFESSIONAL EXPERIENCE
 
 ### **AI Engineer (AI Lab Team Lead)** — **Grepp** | *2025.08 - Present*
-- **MonitorAI (AI Proctoring Platform)** — Leading development of cheating detection system for online exam platform
-  - Architected multi-layer architecture combining **Multimodal VLM (Vision-Language Model)** as intermediate layer with **top-tier LLM** for anomaly decision-making
-  - Designed pipeline where VLM captures visual/audio features from candidate and camera feeds, then passes structured representations to LLM for high-level reasoning
-  - Developing **AI Proctoring Agent** that autonomously detects, evaluates, and logs exam violations with detailed evidence retrieval
-  - Building developer-friendly APIs and SDKs to integrate detection modules seamlessly into third-party exam platforms
-  - Translating technical AI capabilities to non-technical product and sales teams for solution pitches
-
-- **AI Lab Leadership**
-  - Leading AI research and engineering team for MonitorAI product roadmap
-  - Establishing technical direction for multimodal anomaly detection and agent-based evaluation systems
+- **MonitorAI (AI Proctoring Platform)** — Maintaining production infrastructure validated for **stable processing of up to 3000 concurrent real-time streams**; redesigned core architecture to support the new AI Proctoring Agent with identical scalability guarantees.
+- Developed **AI Proctoring Agent** that autonomously detects, evaluates, and logs exam violations — multi-modal VLM + LLM pipeline handling identical concurrent load without degradation.
+- Building developer-friendly APIs and SDKs for seamless third-party exam platform integration.
 
 ### **Machine Learning Developer** — **SK Planet** | *2021 - 2025.08*
 *(Focus: Manufacturing Visual QA, Sensor Fusion, and Technical Transfer)*
