@@ -47,11 +47,11 @@ AI Technical Leader and Evangelist with a proven track record in **Manufacturing
 *(Focus: Manufacturing Visual QA, Sensor Fusion, and Technical Transfer)*
 
 #### 1. Industrial AI & Manufacturing Visual QA (Sensor/Vision)
+- **Environmental Data Fusion**: Built Particulate Matter measurement correction models using triplet losses (LSTM based) to enhance accuracy of IoT sensor data in the field.
 - **Weld Defect Anomaly Detection**: Developed vision-based welding defect inspection for manufacturing lines; built interactive analysis dashboards using Dash.
-- **Breakpad Simulation & Material Property Prediction**: Developed a time-series simulation result prediction model using material property inputs for testing simulation. Engineered an autoencoder-based inverse model capable of predicting material properties from simulation values. Domestic & international patent applications currently in progress.
 - **Surface Defect Inspection & Chemical Anomaly**: Deployed instance segmentation models for smoke/fire and chemical defect detection; collaborated with hardware teams to annotate and evaluate real-world sensor data.
 - **Restoration & Dewarping**: Designed algorithms and functional APIs for restoring images captured via non-linear line-scan cameras (industrial sensor use-case).
-- **Environmental Data Fusion**: Built Particulate Matter measurement correction models using triplet losses (LLSTim based) to enhance accuracy of IoT sensor data in the field.
+- **Breakpad Simulation & Material Property Prediction**: Developed a time-series simulation result prediction model using material property inputs for testing simulation. Engineered an autoencoder-based inverse model capable of predicting material properties from simulation values. Domestic & international patent applications currently in progress.
 
 #### 2. LLM Applications & Technical Evangelism
 - **Aster (LLM Personal AI Assistant) Project**:
