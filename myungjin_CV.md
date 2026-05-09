@@ -122,6 +122,17 @@ Adept Machine Learning Developer with a proven track record at SK Planet (2021-2
 
 ---
 
+## PUBLICATIONS
+
+1. Myung Jin Kim, YeongHyeon Park, Il Dong Yun. "ARMA Block: A CNN-Based Autoregressive and Moving Average Module for Long-Term Time Series Forecasting." *arXiv preprint arXiv:2509.10324*, Sep 2025.
+   - Proposed a simple yet effective convolutional module for long-term time series forecasting.
+   - Consists of AR (autoregression) and MA (moving average) convolutional components — directly inspires by the ARIMA model.
+   - Performs multi-step forecasting in a single pass, enabling multivariate extension.
+   - Demonstrates competitive accuracy on benchmark datasets, especially on sequences with strong trend variations.
+   - Analysis reveals the block inherently encodes absolute positional information, suggesting its potential as a lightweight replacement for positional embeddings in sequential models.
+
+---
+
 ## PATENTS
 
 - **19 Patent Applications Filed** (SK Planet)
