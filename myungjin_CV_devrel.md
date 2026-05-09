@@ -32,9 +32,8 @@ AI Technical Leader and Evangelist with a proven track record in **Manufacturing
 ## PROFESSIONAL EXPERIENCE
 
 ### **AI Engineer (AI Lab Team Lead)** — **Grepp** | *2025.08 - Present*
-- **MonitorAI (AI Proctoring Platform)** — Maintaining production infrastructure validated for **stable processing of up to 3000 concurrent real-time streams**; redesigned core architecture to support the new AI Proctoring Agent with identical scalability guarantees.
-- Developed **AI Proctoring Agent** that autonomously detects, evaluates, and logs exam violations — multi-modal VLM + LLM pipeline handling identical concurrent load without degradation.
-- Building developer-friendly APIs and SDKs for seamless third-party exam platform integration.
+- **Platform Architecture & Full-Cycle Development**: Maintained production environment validating stable processing for **up to 3000 concurrent real-time streams**; orchestrated the end-to-end development of the core monitoring system, aligning cross-functional AI and infrastructure teams.
+- **AI Agent Adoption Roadmap**: Designed and led the platform's transition to a multi-agent architecture; successfully established the technical roadmap and integrated multi-modal VLM + LLM pipelines for automated violation detection.
 
 ### **Machine Learning Developer** — **SK Planet** | *2021 - 2025.08*
 *(Focus: Manufacturing Visual QA, Sensor Fusion, and Technical Transfer)*
