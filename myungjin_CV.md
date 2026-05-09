@@ -124,12 +124,23 @@ Adept Machine Learning Developer with a proven track record at SK Planet (2021-2
 
 ## PUBLICATIONS
 
-1. Myung Jin Kim, YeongHyeon Park, Il Dong Yun. "ARMA Block: A CNN-Based Autoregressive and Moving Average Module for Long-Term Time Series Forecasting." *arXiv preprint arXiv:2509.10324*, Sep 2025.
-   - Proposed a simple yet effective convolutional module for long-term time series forecasting.
-   - Consists of AR (autoregression) and MA (moving average) convolutional components — directly inspires by the ARIMA model.
-   - Performs multi-step forecasting in a single pass, enabling multivariate extension.
-   - Demonstrates competitive accuracy on benchmark datasets, especially on sequences with strong trend variations.
-   - Analysis reveals the block inherently encodes absolute positional information, suggesting its potential as a lightweight replacement for positional embeddings in sequential models.
+### **Journal Papers**
+
+- **Y. Park, S. Kang, M. J. Kim, Y. Lee, H. S. Kim, J. Yi**. "Visual defect obfuscation based self-supervised anomaly detection." *Scientific Reports*, 2024.
+- **Y. Park, M. J. Kim, U. Gim, J. Yi**. "Boost-up efficiency of defective solar panel detection with pre-trained attention recycling." *IEEE Transactions on Industry Applications*, 2023.
+- **Y. Park, M. J. Kim, U. Gim**. "Attention! is recycling artificial neural network effective for maintaining renewable energy efficiency?" *IEEE Texas Power and Energy Conference (TPEC)*, 2022.
+
+### **Conference Papers**
+
+- **M. J. Kim, Y. Park, I. D. Yun**. "ARMA Block: A CNN-Based Autoregressive and Moving Average Module for Long-Term Time Series Forecasting." *arXiv preprint arXiv:2509.10324*, Sep 2025.
+- **Y. Park, M. J. Kim, H. S. Kim**. "Contrastive Language Prompting to Ease False Positives in Medical Anomaly Detection." *IEEE ISBI*, 2025 (Accepted).
+- **M. J. Kim, Y. Park**. "Encouraging LLM Thought Improvements for Medical Diagnosis Consistency." *IEEE ISBI*, 2025.
+- **Y. Park, S. Kang, M. J. Kim, Y. Lee, J. Yi**. "Exploiting Connection-Switching U-Net for Enhancing Surface Anomaly Detection." *ICECIE*, 2024.
+- **Y. Park, S. Kang, M. J. Kim, Y. Lee, H. S. Kim, J. Yi**. "Neural network training strategy to enhance anomaly detection performance: A perspective on reconstruction loss amplification." *IEEE ICASSP*, 2024.
+- **Y. Park, M. J. Kim, U. Gim, J. Yi**. "Recycling for Recycling: RoI Cropping by Recycling a Pre-Trained Attention Mechanism for Accurate Classification of Recyclables." *IEEE SIST*, 2023.
+- **Y. Park, M. J. Kim, U. Gim**. "Edge Storage Management Recipe with Zero-Shot Data Compression for Road Anomaly Detection." *IEEE ICTC*, 2023.
+- **Y. Park, M. J. Kim, W. S. Park, J. Yi**. "Design of cost-effective auto-encoder for electric motor anomaly detection in resource constrained edge device." *IEEE ECICE*, 2021.
+- **M. J. Kim, T. Park, S. Lee, H. Y. Jung, I. D. Yun**. "Semi-automatic segmentation of knee cartilage in longitudinal MR images by seed transfer." *ICECCE*, 2020.
 
 ---
 
