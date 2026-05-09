@@ -95,7 +95,7 @@ AI Technical Leader and Evangelist with a proven track record in **Manufacturing
 ### **Ph.D. in Computer Science** (Coursework Completed) — **Hankuk University of Foreign Studies** | *2022 - Present*
 - Focus: Computer Vision, Deep Learning basics, Recommendation Systems
 
-### **M.D. in Medical Image Processing** — **Hankuk University of Foreign Studies** | *2013 - 2015*
+### **M.S. in Medical Image Processing** — **Hankuk University of Foreign Studies** | *2013 - 2015*
 
 ### **B.S. in Digital Information Engineering** — **Hankuk University of Foreign Studies** | *2006 - 2013*
 
