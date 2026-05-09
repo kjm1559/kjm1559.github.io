@@ -33,7 +33,7 @@ AI Technical Leader and Evangelist with a proven track record in **Manufacturing
 
 ### **AI Engineer (AI Lab Team Lead)** — **Grepp** | *2025.08 - Present*
 - **Platform Architecture & Full-Cycle Development**: Maintained production environment validating stable processing for **up to 3000 concurrent real-time streams**; orchestrated the end-to-end development of the core monitoring system, aligning cross-functional AI and infrastructure teams.
-- **AI Agent Adoption Roadmap**: Designed and led the platform's transition to a multi-agent architecture; successfully established the technical roadmap and integrated multi-modal VLM + LLM pipelines for automated violation detection.
+- **AI Agent Adoption Roadmap:** *Designed and implemented the AI Agent adoption roadmap:* transitioned the platform's core monitoring to a multi-agent architecture, integrating multi-modal VLM + LLM pipelines for automated violation detection.
 
 ### **Machine Learning Developer** — **SK Planet** | *2021 - 2025.08*
 *(Focus: Manufacturing Visual QA, Sensor Fusion, and Technical Transfer)*
