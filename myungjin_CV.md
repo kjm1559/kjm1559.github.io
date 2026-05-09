@@ -12,13 +12,27 @@ title: Myungjin Kim - CV
 
 ## SUMMARY
 
-Adept Machine Learning Developer with a proven track record at SK Planet, specializing in anomaly detection and predictive modeling. Recently, I have been working as a Prompt Engineer on the Aster project, developing a personal AI assistant powered by large language models. In this role, I focus on developing and enhancing each feature, analyzing individual features, and generating robust datasets. I have extensive experience working with both structured (including image data) and unstructured data, equipping me to handle a wide variety of data challenges effectively. Additionally, I quickly adapt to new environments, ensuring a smooth transition and immediate productivity.
+Adept Machine Learning Developer with a proven track record at SK Planet (2021-2025), specializing in anomaly detection and predictive modeling. Currently leading AI development at Grepp, building monitoring and AI proctoring platforms. Recent work includes prompt engineering for Aster (personal LLM assistant) and multi-modal VLM-based anti-cheating systems. Extensive experience in computer vision, anomaly detection, and LLM applications. Quickly adapt to new environments and deliver immediate productivity.
 
 ---
 
 ## PROFESSIONAL EXPERIENCE
 
-### **Machine Learning Developer** — **SK Planet** | *2021 - Present*
+### **AI Engineer (AI Lab Team Lead)** — **Grepp** | *2025.08 - Present*
+
+- **MonitorAI (AI Proctoring Platform)** — Leading development of cheating detection system for online exam platform
+  - Architected multi-layer architecture combining **Multimodal VLM (Vision-Language Model)** as intermediate layer with **top-tier LLM** for anomaly decision-making
+  - Designed pipeline where VLM captures visual/audio features from candidate and camera feeds, then passes structured representations to LLM for high-level reasoning
+  - Developed real-time anti-cheating detection covering gesture, face deviation, unauthorized device usage, and multi-person detection
+  - Building **AI Proctoring Agent** that autonomously detects, evaluates, and logs exam violations with detailed evidence retrieval
+  - Implemented multimodal input processing (video frames, audio, gaze tracking) for comprehensive cheating detection
+  - Optimized inference latency for real-time monitoring while maintaining high detection accuracy
+
+- **AI Lab Leadership**
+  - Leading AI research and engineering team for MonitorAI product roadmap
+  - Establishing technical direction for multimodal anomaly detection and agent-based evaluation systems
+
+### **Machine Learning Developer** — **SK Planet** | *2021 - 2025.08*
 
 #### Aster (LLM-Powered Personal AI Assistant)
 - **Prompt engineering** for intent classification from user utterances
@@ -42,7 +56,7 @@ Adept Machine Learning Developer with a proven track record at SK Planet, specia
   - Designed LSTM auto-encoder based architecture, researched performance on huge latent space
 
 #### Data Science & Analytics
-- **Peptide analysis**: Developed statistical model for diagnosis from LC-MSMS data, developed visualization module
+- **Peptide analysis**: Developed statistical model for diagnosis from LC-MSMS data
 - **Health age prediction** from tabular data
 - **Parking availability check** model using simple CNN
 - **19 Patent Applications Filed**
@@ -100,9 +114,9 @@ Adept Machine Learning Developer with a proven track record at SK Planet, specia
 
 ## SKILLS
 
-- **Deep Learning Algorithms**: CNNs, RNNs/LSTMs, Auto-Encoders, Transformers, Instance Segmentation
+- **Deep Learning Algorithms**: CNNs, RNNs/LSTMs, Auto-Encoders, Transformers, Instance Segmentation, Multimodal VLM
 - **AI Frameworks**: PyTorch, TensorFlow, Kubeflow, Langfuse, Gradio
-- **Core Competencies**: Anomaly Detection, Machine Learning, Data Preprocessing, Unsupervised Learning, Model Evaluation
+- **Core Competencies**: Anomaly Detection, Machine Learning, Data Preprocessing, Unsupervised Learning, Model Evaluation, AI Proctoring
 - **Languages**: Python
 - **Tools**: OpenCV, Dash, Plotly, Flask, Swagger, COCOAnnotator
 
