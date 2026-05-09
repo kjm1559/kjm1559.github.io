@@ -43,6 +43,11 @@ AI Technical Leader and Evangelist with a proven track record in **Manufacturing
   - Leading AI research and engineering team for MonitorAI product roadmap
   - Establishing technical direction for multimodal anomaly detection and agent-based evaluation systems
 
+- **Brake Pad (브레이크 패드) Simulation & Material Prediction**:
+  - Developed a time-series simulation result prediction model driven by material property inputs, optimizing test-to-simulation correlation.
+  - Engineered an inverse autoencoder-based architecture capable of predicting material properties directly from simulation outputs.
+  - Currently securing dual-track patents (domestic & international).
+
 ### **Machine Learning Developer** — **SK Planet** | *2021 - 2025.08*
 *(Focus: Manufacturing Visual QA, Sensor Fusion, and Technical Transfer)*
 
