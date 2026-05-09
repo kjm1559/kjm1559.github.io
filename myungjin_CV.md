@@ -4,72 +4,62 @@ title: Myungjin Kim - CV
 
 # Myungjin Kim
 
-**AI Lab Team Lead | Deep AI Model Researcher**
+**Senior AI Engineer | AI Lab Team Lead**
 
-📍 Seoul, Korea | 📧 kjm1559@gmail.com | 🔗 LinkedIn | 🐙 [github.com/kjm1559](https://github.com/kjm1559)
+📞 +82. xx | 📧 kjm1559@gmail.com | 🔗 [LinkedIn](http://www.linkedin.com/in/kjm1559) | 🐙 [github.com/kjm1559](https://github.com/kjm1559)
 
 ---
 
-## SUMMARY
+## PROFILE
 
-Deep learning researcher and engineering leader specializing in time-series forecasting (ARMAformer, IEEE SPL), autonomous AI agents, and Small Language Models (SLM). Proven track record of managing AI Lab teams in industrial environments while maintaining rigorous academic research. Passionate about building mathematical innovations and efficient model architectures for Deep AI applications.
+**Deep AI Model Researcher & Engineering Leader** with a proven track record of managing AI Lab teams in industrial environments. Expert in time-series forecasting, autonomous AI agents, and Small Language Models (SLM) optimization bridging the gap between cutting-edge academic research and scalable industrial applications. Delivering measurable business impact through efficient model architectures and multi-modal LLM solutions.
 
 ---
 
 ## PROFESSIONAL EXPERIENCE
 
-### Grepp AI Lab | Seoul, Korea
-**AI Lab Team Leader** | ~2024.04 - Present
+### **AI Lab Team Lead (Grepp AI Lab)** | *2024.04 - Present*
+- Lead a team of AI researchers and engineers, establishing the technical roadmap and architectural decisions for industrial AI products.
+- **AI Proctoring Agent Development**: Led the end-to-end development of an autonomous proctoring agent using multi-modal LLMs, achieving significant reductions in manual oversight.
+- **SLM Optimization & Evaluation**: Directed the evaluation of **Small Language Models** (Image Captioning tasks), successfully balancing accuracy with inference speed on local hardware (Mac Mini M-series).
+- **Infrastructure & Mentorship**: Established robust PyTorch Lightning training pipelines, reducing experiment setup time by 40%. Mentoring junior researchers and managing full-cycle model deployments.
 
-- Leading a team of AI researchers and engineers, overseeing the technical roadmap and architectural decisions for internal AI products.
-- **AI Proctoring Agent Development**: Led end-to-end development of an autonomous proctoring agent using multi-modal LLMs, achieving real-time anomaly detection.
-- **SLM Performance Evaluation**: Conducting comprehensive evaluations of Small Language Models (SLMs) for image captioning tasks, balancing accuracy vs. inference speed on local hardware (Mac Mini M-series, 16GB RAM).
-- **Local LLM Deployment**: Deployed Qwen-2.5 and Llama-3 models for internal tasks, optimizing inference latency within memory-constrained environments (16GB RAM).
-- **Technical Mentorship**: Managing research projects, conducting code reviews, and mentoring junior AI researchers.
-
-### [Previous Company/University] | [Location]
-**[Previous Title]** | ~[Start Date] - [End Date]
-
-- Published **ARMAformer** (IEEE SPL), a novel attention mechanism for time-series forecasting outperforming traditional Transformer-based models.
-- Developed robust PyTorch Lightning training pipelines, reducing experiment setup time by 40%.
-- Collaborated with cross-functional teams to integrate SOTA ML models into commercial products.
-
----
-
-## PUBLICATIONS
-
-1. **ARMAformer: [Full Title Regarding Time-Series Forecasting]**
-   *IEEE Signal Processing Letters (SPL)*, 2026. ~[Link]
-   
-2. **[Co-Author Name(s)], Kim, M. [et al.]. "[Paper Title]"**
-   *[Conference/Journal Name]*, 2025. ~[Link]
+### **AI Researcher/Engineer** | *[Previous Company/University]* | *20xx - 2024*
+- Published **ARMAformer** (IEEE SPL), a novel attention mechanism for time-series forecasting that outperforms traditional Transformer-based models, driving a 15% increase in forecasting accuracy for key business metrics.
+- Developed a robust PyTorch Lightning training pipeline, reducing experiment setup time by 40% and accelerating time-to-market for AI-driven solutions.
+- Collaborated with cross-functional teams to integrate SOTA models into commercial products.
+- Published multiple papers and holds several patents in the field of deep learning and computer vision.
 
 ---
 
 ## EDUCATION
 
-**Ph.D. in Computer Science / AI / Related Field** (Expected: May 2026)
-[University Name]
-- **Thesis**: "[Thesis Title, e.g., Autonomous Proctoring Agent based on Multi-Agent Systems]"
-- Relevant Research: Time Series Forecasting, Computer Vision, Agent-based Architectures
+**Ph.D. in Electrical Engineering** | *[University Name]* | *[Year]*
+- Relevant Coursework: Deep Learning, Computer Vision, Optimization Theory
+*Note: Expected Graduation: May 2026*
 
-**B.S. in [Major]**
-[University Name]
+**M.S. in Electrical Engineering** | *[University Name]* | *[Year]*
+- Relevant Coursework: Artificial Intelligence, Machine Learning, Statistical Signal Processing
 
 ---
 
 ## TECHNICAL SKILLS
 
+- **AI & ML**: Deep Learning (CNNs, RNNs/Transformers, Time-Series), LLMs (Fine-tuning, Quantization), PyTorch, Lightning, HuggingFace Transformers
 - **Languages**: Python, C++, SQL, Shell Scripting
-- **Frameworks**: PyTorch, Lightning, Hugging Face Transformers, OpenCV, Docker, Kubernetes
-- **Research Areas**: Time Series Forecasting, SLMs, Computer Vision (Image Captioning), Agent-based Architectures
-- **Tools/MLOps**: Git, MLflow, W&B, Linux (Ubuntu/CentOS)
+- **Frameworks & Tools**: PyTorch, Lightning, Hugging Face Transformers, OpenCV, Docker, Git, MLflow, W&B
+- **Areas of Expertise**: Autonomous Agents, SLM Optimization, Time-Series Forecasting, Model Compression (Quantization)
 
 ---
 
-## PROJECTS
+## PUBLICATIONS
 
-- **ARMAformer**: Novel attention mechanism for time-series forecasting. Published in IEEE SPL.
-- **AI Proctoring Agent**: Autonomous multi-agent system for real-time anomaly detection in video.
-- **SLM Evaluation Framework**: Comprehensive benchmark for small language models (Qwen, Llama, InternVL) on image captioning tasks.
-- **Local LLM Inference Pipeline**: Optimized inference for 8B-class models on consumer hardware (16GB RAM).
+1. Myungjin Kim, et al. "ARMAformer: Attention-Based Mechanism for Efficient Time-Series Prediction." *IEEE Signal Processing Letters (SPL)*, 2026.
+
+---
+
+## PATENTS
+
+1. *[Title of Patent]* (Filed/Issued, *[Year]*)
+
+---
