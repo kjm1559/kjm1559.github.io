@@ -55,3 +55,13 @@
 44. Apparatus for anomaly detection based on self-supervised learning using active masking and method therefor (출원번호: 1020240034512, 2024-03-12)
 45. METHOD OF GENERATION OF DATA SET FOR LEARNING AND AN ELECTRONIC DEVICE SUPPORTING THE SAME (출원번호: 1020220108649, 2022-08-29)
 46. Anomaly Detection method for product based on Unsupervised learning and information processing device supporting the same (출원번호: 1020230139717, 2023-10-18)
+
+
+---
+
+# Penta Security Patents (3 - Granted)
+
+## Security & Anomaly Detection
+1. METHOD FOR DETECTING SIGNAL IN COMMUNICATION NETWORK BASED ON CONTROLLER AREA NETWORK AND APPARATUS THEREFOR (출원번호: 1020190099372, 2019-08-14 / 등록완료)
+2. METHOD AND APPARATUS FOR DETECTING ABNORMAL TRAFFIC BASED ON CONVOLUTIONAL AUTOENCODER (출원번호: 1020180166682, 2018-12-20 / 등록완료)
+3. METHOD AND APPARATUS FOR DETECTING ABNORMAL BEHAVIOR OF GROUPWARE USER (출원번호: 1020190010285, 2019-01-28 / 등록완료)
