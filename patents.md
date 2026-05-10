@@ -1,0 +1,57 @@
+# SK Planet Patents (46)
+
+## Image, Video & Object Analysis
+1. Segmentation method of regions of image AND ELECTRONIC DEVICE supporting the same (출원번호: 1020230067680, 2023-05-25)
+2. gENERATING METHOD FOR LEARNING DATA AND ELECTRONIC DEVICE supporting the same (출원번호: 1020230059891, 2023-05-09)
+3. ANOMALY DETECTION APPARATUS, AND ANOMALY DETECTION METHOD (출원번호: 1020230050741, 2023-04-18)
+4. Apparatus for anomaly detection using attention mechanism and method therefor (출원번호: 1020210161702, 2021-11-22)
+5. Detecting METHOD of state of Road surface condition based on Unsupervised Learning and detecting System supporting the same (출원번호: 1020220162400, 2022-11-29)
+6. Apparatus for protecting the privacy of people included in a video and method therefor (출원번호: 1020230171951, 2023-12-01)
+7. Processing method for Privacy protection of image and monitoring device supporting the same (출원번호: 1020230171692, 2023-11-30)
+8. Apparatus for securing the view of the surveillance camera screen and method therefor (출원번호: 1020230170204, 2023-11-29)
+9. CLASSIFYING APPARATUS FOR ABNORMAL TYPE, AND CONTROL METHOD THEREOF (출원번호: 1020220017241, 2022-02-10)
+10. Apparatus for detecting speeding vehicles based on object detection and method therefor (출원번호: 1020230154336, 2023-11-09)
+11. Apparatus for reserving parking spaces based on video analysis and method therefor (출원번호: 1020230143385, 2023-10-24)
+12. Method for detecting of automobile speed using a cctv image and monitoring device supporting the same (출원번호: 1020230171691, 2023-11-30)
+13. Detection method for monitoring illegally parked and stationary vehicles and monitoring device supporting the same (출원번호: 1020230170203, 2023-11-29)
+14. A defect detection device for a solar panel, AND OPERATION METHOD THEREOF (출원번호: 1020220058133, 2022-05-12)
+15. Improvement method for object detection and object detection device supporting the same (출원번호: 1020230163439, 2023-11-22)
+16. Apparatus for detecting intervening vehicles based on object segmentation and method therefor (출원번호: 1020230139931, 2023-10-18)
+17. Detecting Method using a specular removal and device supporting the same (출원번호: 1020230139929, 2023-10-18)
+18. Operating Method of a machine vision using by Deletion of a specular component and device supporting the same (출원번호: 1020230139930, 2023-10-18)
+
+## Parking & Traffic Management
+19. OPERATION method of a Parking lot based on a CCTV AND ELECTRONIC DEVICE supporting the same (출원번호: 1020230080475, 2023-06-22)
+20. OPERATION method of a Parking lot based on a depth map AND ELECTRONIC DEVICE supporting the same (출원번호: 1020230067681, 2023-05-25)
+21. method for detecting of automobile speed using a movable cctv camera device and MONITORING supporting device supporting the same (출원번호: 1020230171694, 2023-11-30)
+22. Method for operation of a charging station based on CCTV IMAGE AND guide supporting DEVICE supporting the same (출원번호: 1020230171693, 2023-11-30)
+23. Apparatus for controlling traffic signals using a learning model and method therefor (출원번호: 1020230170201, 2023-11-29)
+24. Apparatus for for detecting a vehicle cutting in based on object detection and method therefor (출원번호: 1020230170202, 2023-11-29)
+25. Detection method for monitoring violation of Traffic signal line and monitoring device supporting the same (출원번호: 1020230162236, 2023-11-21)
+26. monitoring method for Designated Car Lanes and monitoring device supporting the same (출원번호: 1020230143384, 2023-10-24)
+27. Apparatus and method for performing parking management based on lens aberration correction image (출원번호: 1020230139716, 2023-10-18)
+28. Apparatus and method for managing parking based on video analysis for load distribution (출원번호: 1020230139510, 2023-10-18)
+29. Apparatus and method for parking management based on planar image conversion (출원번호: 1020230138622, 2023-10-17)
+30. detection method for monitoring illegally parked and stationary vehicles based on MOVABLE camera DEVICE and monitoring device supporting the same supporting the same (출원번호: 1020230139928, 2023-10-18)
+31. Apparatus for controlling traffic signals using a learning model and method therefor (출원번호: 1020230139927, 2023-10-18)
+
+## Road, Weather & Safety Monitoring
+32. estimation method for friction coefficient of road and anayzing System supporting the same (출원번호: 1020220162401, 2022-11-29)
+33. predictting method of a landslide based on unsupervised learning and an electroni device for warning of landslide supporting the same (출원번호: 1020220161252, 2022-11-28)
+34. METHOD FOR Road surface condition analysis and an Operation device including spectral camera supporting the same (출원번호: 1020220162399, 2022-11-29)
+35. predictting method of a landslide based on supervised learning and an electroni device for warning of landslide supporting the same (출원번호: 1020220162398, 2022-11-29)
+36. prediction method of flooding using a learning model and method therefor (출원번호: 1020230171952, 2023-12-01)
+37. method for monitoring reckless driving based on CCTV and monitoring device supporting the same supporting the same (출원번호: 1020230121301, 2023-09-12)
+38. method for monitoring reckless driving based on MOVABLE camera DEVICE and monitoring device supporting the same supporting the same (출원번호: 1020230121300, 2023-09-12)
+39. Method for providing weather information and electronic device supporting the same (출원번호: 1020230107290, 2023-08-16)
+
+## Manufacturing, Welding & Composite Materials
+40. Method for mutually inferring composite properties and composite production conditions through Autoencoder feature extraction and apparatus therefor (출원번호: 1020210135686, 2021-10-13)
+41. Apparatus for inferring compound production recipe based on Generative Adversarial Networks GAN and method therefor (출원번호: 1020210095607, 2021-07-21)
+42. Method for providing information of a welding state and electronic device supporting the same (출원번호: 1020230107291, 2023-08-16)
+
+## Data Generation & AI Infrastructure
+43. Apparatus for anomaly detection based on artificial neural network to minimize computational cost and method therefor (출원번호: 1020220015788, 2022-02-07)
+44. Apparatus for anomaly detection based on self-supervised learning using active masking and method therefor (출원번호: 1020240034512, 2024-03-12)
+45. METHOD OF GENERATION OF DATA SET FOR LEARNING AND AN ELECTRONIC DEVICE SUPPORTING THE SAME (출원번호: 1020220108649, 2022-08-29)
+46. Anomaly Detection method for product based on Unsupervised learning and information processing device supporting the same (출원번호: 1020230139717, 2023-10-18)
