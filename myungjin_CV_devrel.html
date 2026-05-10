@@ -21,132 +21,114 @@
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     color: var(--text-primary);
     background: var(--bg);
-    line-height: 1.5;
-    font-size: 12px;
+    line-height: 1.6;
+    font-size: 14px;
     max-width: 210mm;
     margin: 0 auto;
-    padding: 10mm 15mm;
+    padding: 12mm 18mm 15mm 18mm;
     -webkit-font-smoothing: antialiased;
   }
 
   .header {
     text-align: center;
-    padding-bottom: 10px;
-    margin-bottom: 12px;
-    border-bottom: 2px solid var(--accent);
+    padding-bottom: 14px;
+    margin-bottom: 18px;
+    border-bottom: 3px solid var(--accent);
   }
   .header h1 {
     font-family: 'Playfair Display', Georgia, serif;
-    font-size: 26px;
+    font-size: 32px;
     font-weight: 700;
     color: var(--text-primary);
-    margin-bottom: 2px;
+    letter-spacing: -0.5px;
+    margin-bottom: 4px;
   }
   .header .subtitle {
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 600;
     color: var(--accent);
     letter-spacing: 0.5px;
     text-transform: uppercase;
-    margin-bottom: 6px;
+    margin-bottom: 8px;
   }
   .header .contact {
-    font-size: 11px;
+    font-size: 11.5px;
     color: var(--text-secondary);
     line-height: 1.8;
   }
   .header .contact a {
     color: var(--accent);
     text-decoration: none;
+    border-bottom: 1px solid transparent;
   }
 
-  .section { margin-bottom: 14px; }
+  .section { margin-bottom: 20px; }
   .section-title {
     font-family: 'Playfair Display', Georgia, serif;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 700;
     color: var(--text-primary);
     text-transform: uppercase;
-    letter-spacing: 1px;
-    padding-bottom: 4px;
-    margin-bottom: 8px;
-    border-bottom: 1px solid var(--divider);
+    letter-spacing: 1.5px;
+    padding-bottom: 6px;
+    margin-bottom: 12px;
+    border-bottom: 2px solid var(--divider);
   }
 
   .summary-text {
-    font-size: 12.5px;
+    font-size: 13.5px;
     color: var(--text-secondary);
-    line-height: 1.6;
+    line-height: 1.7;
     text-align: justify;
-    margin-bottom: 8px;
   }
 
-  .exp-entry { margin-bottom: 10px; }
+  .exp-entry { margin-bottom: 16px; }
   .exp-header {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
     margin-bottom: 2px;
   }
-  .exp-role {
-    font-size: 13px;
-    font-weight: 700;
-    color: var(--text-primary);
-  }
-  .exp-company {
-    font-size: 13px;
-    font-weight: 600;
-    color: var(--accent);
-  }
-  .exp-dates {
-    font-size: 11px;
-    font-weight: 500;
-    color: var(--text-secondary);
-    font-style: italic;
-  }
-  .exp-desc { font-size: 12px; color: var(--text-secondary); line-height: 1.6; margin-left: 4px; }
-  .exp-desc ul { margin: 2px 0 0 14px; }
-  .exp-desc li { margin-bottom: 2px; }
+  .exp-role { font-size: 14.5px; font-weight: 700; color: var(--text-primary); }
+  .exp-company { font-size: 14.5px; font-weight: 600; color: var(--accent); }
+  .exp-dates { font-size: 12px; font-weight: 500; color: var(--text-secondary); font-style: italic; }
+  .exp-subtitle { font-size: 12.5px; font-weight: 600; color: var(--text-primary); margin-top: 6px; margin-bottom: 2px; font-style: italic; }
+  .exp-desc { font-size: 12.5px; color: var(--text-secondary); line-height: 1.65; }
+  .exp-desc ul { margin: 4px 0 0 16px; }
+  .exp-desc li { margin-bottom: 3px; }
   .exp-desc li strong { color: var(--text-primary); }
 
-  .skills-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4px 16px;
-  }
-  .skill-category { font-size: 12px; margin-bottom: 2px; }
-  .skill-category strong { color: var(--text-primary); }
-  .skill-category .skill-items { color: var(--text-secondary); font-size: 11px; }
-
-  .pub-patent {
-    font-size: 12px;
-    color: var(--text-secondary);
-    margin-bottom: 4px;
-    padding-left: 10px;
-    border-left: 2px solid var(--divider);
-    margin-left: 4px;
-  }
-  .pub-patent strong { color: var(--text-primary); }
-
-  .edu-entry { margin-bottom: 3px; }
-  .edu-school { font-size: 12.5px; font-weight: 600; color: var(--accent); }
-  .edu-degree { font-size: 12.5px; font-weight: 700; color: var(--text-primary); }
-  .edu-year { font-size: 11px; color: var(--text-secondary); font-style: italic; }
-
-  .highlight-box {
+  .devrel-highlights {
     background: var(--section-bg);
     border-left: 3px solid var(--accent);
-    padding: 6px 10px;
-    margin: 6px 0;
-    border-radius: 0 4px 4px 0;
+    padding: 10px 14px;
+    margin: 10px 0;
+    border-radius: 0 6px 6px 0;
   }
-  .highlight-box strong { color: var(--accent); font-size: 11px; text-transform: uppercase; }
+  .devrel-highlights .hl-title { font-size: 13px; font-weight: 700; color: var(--accent); margin-bottom: 4px; }
+  .devrel-highlights .hl-text { font-size: 12px; color: var(--text-secondary); line-height: 1.6; }
+
+  .pub-section-title { font-size: 13.5px; font-weight: 700; color: var(--text-primary); margin: 12px 0 6px 0; }
+  .pub-list { margin-left: 14px; counter-reset: pub-counter; }
+  .pub-item { font-size: 12px; color: var(--text-secondary); line-height: 1.6; margin-bottom: 5px; padding-left: 2px; }
+  .pub-item::before { content: counter(pub-counter) "."; font-weight: 600; color: var(--accent); margin-right: 4px; }
+  .pub-item .journal { font-style: italic; color: var(--text-primary); font-weight: 500; }
+
+  .patent-highlight {
+    font-size: 14px; font-weight: 600; color: var(--text-primary);
+    background: var(--section-bg); padding: 8px 14px; border-radius: 6px;
+    border-left: 3px solid var(--accent);
+  }
+
+  .skills-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6px 20px; }
+  .skill-category { font-size: 12.5px; margin-bottom: 4px; }
+  .skill-category strong { color: var(--text-primary); }
+  .skill-items { color: var(--text-secondary); font-size: 12px; }
 
   @media print {
-    body { padding: 8mm 12mm; }
-    .header { margin-bottom: 10px; }
-    .section { margin-bottom: 10px; }
-    a { color: var(--accent) !important; text-decoration: none !important; }
+    body { padding: 10mm 15mm 12mm 15mm; max-width: none; font-size: 13px; }
+    .header { margin-bottom: 14px; }
+    .section { margin-bottom: 14px; }
   }
 </style>
 </head>
@@ -156,10 +138,10 @@
   <h1>Myungjin Kim</h1>
   <div class="subtitle">Manufacturing AI DevRel &amp; Team Lead</div>
   <div class="contact">
-    <a href="mailto:kjm1559@gmail.com">kjm1559@gmail.com</a><span style="color:var(--divider)">|</span>
-    <a href="https://linkedin.com/in/kjm1559" target="_blank">LinkedIn</a><span style="color:var(--divider)">|</span>
-    <a href="https://github.com/kjm1559" target="_blank">GitHub</a><span style="color:var(--divider)">|</span>
-    <a href="https://scholar.google.com/citations?user=DcCbsc8AAAAJ&hl=ko" target="_blank">Scholar</a><span style="color:var(--divider)">|</span>
+    <a href="mailto:kjm1559@gmail.com">kjm1559@gmail.com</a><span class="separator">|</span>
+    <a href="https://linkedin.com/in/kjm1559" target="_blank">LinkedIn</a><span class="separator">|</span>
+    <a href="https://github.com/kjm1559" target="_blank">GitHub</a><span class="separator">|</span>
+    <a href="https://scholar.google.com/citations?user=DcCbsc8AAAAJ&hl=ko" target="_blank">Scholar</a><span class="separator">|</span>
     <a href="https://www.kaggle.com/kjm1559" target="_blank">Kaggle Expert</a>
   </div>
 </div>
@@ -167,21 +149,23 @@
 <div class="section">
   <div class="section-title">Summary</div>
   <p class="summary-text">
-    AI Technical Leader &amp; Evangelist with deep expertise in <strong>Manufacturing AI</strong> (Industrial Vision, Sensor Fusion, Predictive Maintenance) and next-gen LLM infrastructure. Proven track record of bridging cutting-edge architectures (Multi-modal VLM, DevRel, Serverless) with real-world industrial challenges at Tier 2 automotive suppliers. Strong technical authority with <strong>55 patents</strong> and extensive experience in developer tooling, API design, and internal tech evangelism.
+    AI Technical Leader and Evangelist with a proven track record in <strong>Manufacturing AI</strong> (Industrial Vision, Sensor Fusion, Predictive Maintenance) and AI Proctoring systems. Deep expertise in bridging cutting-edge AI architectures (Multimodal VLM, SLMs, LLMs) and real-world industrial manufacturing problems. Demonstrated technical authority with <strong>55 patents</strong> (52 filed, 3 granted) and 12 publications (ISBI, ICASSP, Scientific Reports, arXiv). Extensive experience in internal technical demos, API design, standardization, and building developer-friendly tools. Passionate about translating complex AI capabilities into clear technical value for hardware partners, R&amp;D teams, and the developer ecosystem.
   </p>
 </div>
 
 <div class="section">
-  <div class="section-title">Core Competencies</div>
-  <div class="skills-grid">
-    <div class="skill-category"><strong>Cloud &amp; Infrastructure:</strong></div>
-    <div class="skill-items">AWS (ECS, Lambda, SQS, S3, DynamoDB), Amazon Bedrock (Failover), Serverless, Event-Driven Architecture</div>
-    <div class="skill-category"><strong>AI &amp; LLM Ops:</strong></div>
-    <div class="skill-items">Multi-Agent Architecture, VLM, LLM Apps, Anomaly Detection, RAG Pipelines, Vector Databases</div>
-    <div class="skill-category"><strong>DevRel &amp; Evangelism:</strong></div>
-    <div class="skill-items">Technical Demos, API Design, Swagger/OpenAPI, Tech Pitching, Partner Alignment, Tool Development</div>
-    <div class="skill-category"><strong>Frameworks &amp; Tools:</strong></div>
-    <div class="skill-items">PyTorch, TensorFlow, Kubeflow, LangFuse, Gradio, Dash, Plotly, OpenCV, Flask</div>
+  <div class="section-title">Technical Evangelism &amp; Ecosystem</div>
+  <div class="devrel-highlights">
+    <div class="hl-title">MWC 2025: Public Tech Demo &amp; Evangelism</div>
+    <div class="hl-text">Created end-to-end demo features for <strong>Aster (LLM AI Assistant)</strong> &mdash; showcasing real-time intent classification, plan suggestion logic, and tool call routing to global tech audiences.</div>
+  </div>
+  <div class="devrel-highlights">
+    <div class="hl-title">Developer Tooling &amp; Visualization</div>
+    <div class="hl-text">Built developer-friendly evaluation workflows using <strong>Gradio</strong>, <strong>LangFuse</strong>, <strong>Dash</strong>, and <strong>Plotly</strong> &mdash; enabling seamless integration with engineering partners.</div>
+  </div>
+  <div class="devrel-highlights">
+    <div class="hl-title">API Design &amp; Standardization</div>
+    <div class="hl-text">Designed functional APIs and wrote comprehensive <strong>Swagger/OpenAPI documentation</strong> for internal and external engineering handovers.</div>
   </div>
 </div>
 
@@ -190,79 +174,122 @@
 
   <div class="exp-entry">
     <div class="exp-header">
-      <span class="exp-role">AI Lab Team Lead</span>
-      <span class="exp-company">Grepp</span>
-      <span class="exp-dates">Aug 2025 – Present</span>
+      <div><span class="exp-role">AI Engineer (AI Lab Team Lead)</span> <span class="exp-company">&mdash; Grepp</span></div>
+      <span class="exp-dates">Aug 2025 &ndash; Present</span>
     </div>
     <div class="exp-desc">
       <ul>
-        <li><strong>LLM Service Resilience &amp; Failover:</strong> Architected high-availability infrastructure using <strong>AWS ECS, Lambda, and SQS</strong> for decoupled processing. Implemented <strong>Amazon Bedrock as a failover</strong> mechanism to ensure seamless service continuity during primary model disruptions.</li>
-        <li><strong>Multi-AI Agent Adoption Roadmap:</strong> Designed and implemented a multi-modal VLM + LLM pipeline for automated violation detection, transitioning the core monitoring to a robust multi-agent architecture.</li>
-        <li><strong>Platform Architecture:</strong> Maintained production environment validating stable processing for <strong>up to 3000 concurrent real-time streams</strong>.</li>
-      </ul>
-      <div class="highlight-box">
-        <strong>Key Project:</strong> Spearheaded internal AI Agent adoption strategy, bridging hardware IoT feeds with LLM intelligence.
-      </div>
-    </div>
-  </div>
-
-  <div class="exp-entry">
-    <div class="exp-header">
-      <span class="exp-role">ML Engineer (Manufacturing AI)</span>
-      <span class="exp-company">SK Planet</span>
-      <span class="exp-dates">2021 – Aug 2025</span>
-    </div>
-    <div class="exp-desc">
-      <ul>
-        <li><strong>Welding Defect Detection (Toshiba Digital Solutions &amp; Hwasin):</strong> Led vision-based inspection for automotive welding parts at **Hwasin** (Hyundai Auto Parts supplier), in collaboration with **Toshiba Digital Solutions **(TDSL). Built interactive analysis dashboards using Dash.</li>
-        <li><strong>Brake Pad Simulation &amp; Material Property Prediction:</strong> Developed time-series prediction models for testing simulation using material properties. Engineered an autoencoder-based inverse model for material property prediction.</li>
-        <li><strong>Aster (LLM Personal AI Assistant):</strong> Designed tool call logic and quantitative analysis via LLM-as-a-judge; executed internal technical demos and verified LLM alignment.</li>
-        <li><strong>Environmental Sensor Fusion:</strong> Built LSTM-based PM measurement correction models to enhance IoT sensor accuracy in field environments.</li>
-        <li><strong>Hazardous Chemical Exposure & Monitoring:</strong> Deployed AI surveillance systems in chemical complexes to detect hazardous leakage and smoke.</li>
+        <li><strong>Platform Architecture & Full-Cycle Development:</strong> Maintained production environment validating stable processing for <strong>up to 3000 concurrent real-time streams</strong>; orchestrated the end-to-end development of the core monitoring system, aligning cross-functional AI and infrastructure teams.</li>
+        <li><strong>AI Agent Adoption Roadmap:</strong> Designed and implemented the AI Agent adoption roadmap, transitioning the platform's core monitoring to a multi-agent architecture integrating multi-modal VLM + LLM pipelines.</li>
+        <li><strong>LLM Service Resilience & Failover:</strong> Architected a high-availability infrastructure using <strong>AWS ECS, Lambda, and SQS</strong> for decoupled processing. Implemented <strong>Amazon Bedrock as a failover</strong> mechanism to ensure seamless service continuity during primary model disruptions.</li>
       </ul>
     </div>
   </div>
 
   <div class="exp-entry">
     <div class="exp-header">
-      <span class="exp-role">ML Researcher & Assistant Manager</span>
-      <span class="exp-company">Wemakeprice (2019–2021) | Penta Security (2016–2019)</span>
+      <div><span class="exp-role">Machine Learning Developer</span> <span class="exp-company">&mdash; SK Planet</span></div>
+      <span class="exp-dates">2021 &ndash; Aug 2025</span>
     </div>
+    <div class="exp-subtitle">Manufacturing Visual QA & Industrial Vision</div>
     <div class="exp-desc">
       <ul>
-        <li><strong>Wemakeprice:</strong> Developed RL + LSTM reinforcement learning models; built inference server using Kubeflow.</li>
-        <li><strong>Penta Security:</strong> Designed auto-encoder models for CAN/URI anomaly detection; validated SSL algorithms for automotive V2X systems.</li>
+        <li><strong>Welding Defect Detection (Toshiba Digital Solutions & Hwasin):</strong> Led vision-based inspection for automotive welding parts at <strong>Hwasin</strong> (Hyundai Auto Parts supplier), in collaboration with <strong>Toshiba Digital Solutions (TDSL)</strong>. Built interactive analysis dashboards using Dash.</li>
+        <li><strong>Brake Pad Simulation & Material Property Prediction:</strong> Developed a time-series simulation result prediction model using material property inputs for testing simulation. Engineered an autoencoder-based inverse model capable of predicting material properties from simulation values.</li>
+        <li><strong>Environmental Sensor Fusion:</strong> Built PM measurement correction models using triplet losses (LSTM-based) to enhance IoT sensor data accuracy in field environments.</li>
+        <li><strong>Hazardous Chemical Exposure & Monitoring:</strong> Deployed AI surveillance systems in aging chemical industrial complexes to detect hazardous chemical leakage and smoke in high-risk environments.</li>
+        <li><strong>Line-Scan Image Restoration:</strong> Designed algorithms and functional APIs for restoring images captured via non-linear speed cameras (industrial sensor use-case).</li>
+      </ul>
+    </div>
+    <div class="exp-subtitle" style="margin-top:10px;">LLM Applications & Tech Evangelism</div>
+    <div class="exp-desc">
+      <ul>
+        <li><strong>Aster (LLM Personal AI Assistant):</strong> Designed tool call logic and quantitative analysis via LLM-as-a-judge; executed internal technical demos to verify actual LLM operational behavior and alignment.</li>
+        <li>Built data pipelines using <strong>LangFuse</strong> and testing tools using <strong>Gradio</strong>, establishing a developer-friendly evaluation workflow.</li>
+        <li><strong>46 Patent Applications Filed</strong> (contributions to visual QA and sensor anomaly detection).</li>
       </ul>
     </div>
   </div>
 
   <div class="exp-entry">
     <div class="exp-header">
-      <span class="exp-role">Commissioned Researcher</span>
-      <span class="exp-company">KETI</span>
-      <span class="exp-dates">2012 – 2013</span>
+      <div><span class="exp-role">Machine Learning Researcher</span> <span class="exp-company">&mdash; Wemakeprice</span></div>
+      <span class="exp-dates">2019 &ndash; 2021</span>
     </div>
-    <div class="exp-desc">Developed IoT platform Mobius for cross-compile environments and service programs.</div>
+    <div class="exp-desc">
+      <ul>
+        <li><strong>AI Baseball Director:</strong> Developed RL + LSTM based reinforcement learning and series prediction models. Built the inference server using Kubeflow.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="exp-entry">
+    <div class="exp-header">
+      <div><span class="exp-role">Assistant Manager</span> <span class="exp-company">&mdash; Penta Security Systems Inc.</span></div>
+      <span class="exp-dates">2016 &ndash; 2019</span>
+    </div>
+    <div class="exp-desc">
+      <ul>
+        <li><strong>CAN & URI Anomaly Detection:</strong> Designed auto-encoder models for security anomaly detection; developed visualization tools using Dash & Plotly.</li>
+        <li><strong>C-ITS Server Development:</strong> Validated SSL algorithms and chain revoke algorithms for automotive V2X systems.</li>
+        <li><strong>3 Patents Granted.</strong></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="exp-entry">
+    <div class="exp-header">
+      <div><span class="exp-role">Commissioned Researcher</span> <span class="exp-company">&mdash; KETI (Korea Electronics Technology Institute)</span></div>
+      <span class="exp-dates">2012 &ndash; 2013</span>
+    </div>
+    <div class="exp-desc">
+      <ul>
+        <li>Developed <strong>IoT platform Mobius</strong> &mdash; service programs in cross-compile environment.</li>
+      </ul>
+    </div>
   </div>
 </div>
 
 <div class="section">
-  <div class="section-title">Patents &amp; Publications</div>
-  <div class="pub-patent"><strong>55 Patents Total:**</strong> 52 filed (incl. 46 for visual QA/sensor fusion at SK Planet, 6 at Grepp), 3 granted (Penta Security).</div>
-  <div class="pub-patent"><strong>12 Publications (Selected):</strong> IEEE ISBI, ICASSP, IEEE TIA, Scientific Reports, arXiv.</div>
-  <div style="font-size: 11px; color: var(--text-secondary); margin-top: 4px; padding-left: 14px;">
-    "Visual defect obfuscation based self-supervised anomaly detection", Scientific Reports, 2024.<br>
-    "ARMA Block: A CNN-Based Autoregressive and Moving Average Module...", arXiv:2509.10324, Sep 2025.<br>
-    "Boost-up efficiency of defective solar panel detection...", IEEE TIA, 2023.
+  <div class="section-title">Publications (12)</div>
+  <div class="pub-section-title">Journal Papers</div>
+  <div class="pub-list">
+    <div class="pub-item"><strong>Y. Park, S. Kang, M. J. Kim, Y. Lee, H. S. Kim, J. Yi.</strong> "Visual defect obfuscation based self-supervised anomaly detection." <span class="journal">Scientific Reports</span>, 2024.</div>
+    <div class="pub-item"><strong>Y. Park, M. J. Kim, U. Gim, J. Yi.</strong> "Boost-up efficiency of defective solar panel detection with pre-trained attention recycling." <span class="journal">IEEE Transactions on Industrial Applications</span>, 2023.</div>
+  </div>
+  <div class="pub-section-title" style="margin-top: 10px;">Conference Papers</div>
+  <div class="pub-list">
+    <div class="pub-item"><strong>M. J. Kim, Y. Park, I. D. Yun.</strong> "ARMA Block: A CNN-Based Autoregressive and Moving Average Module for Long-Term Time Series Forecasting." <span class="journal">arXiv:2509.10324</span>, Sep 2025.</div>
+    <div class="pub-item"><strong>Y. Park, M. J. Kim, H. S. Kim.</strong> "Contrastive Language Prompting to Ease False Positives in Medical Anomaly Detection." <span class="journal">IEEE ISBI</span>, 2025 (Accepted).</div>
+    <div class="pub-item"><strong>M. J. Kim, Y. Park.</strong> "Encouraging LLM Thought Improvements for Medical Diagnosis Consistency." <span class="journal">IEEE ISBI</span>, 2025.</div>
+    <div class="pub-item"><strong>Y. Park, S. Kang, M. J. Kim, Y. Lee, J. Yi.</strong> "Exploiting Connection-Switching U-Net for Enhancing Surface Anomaly Detection." <span class="journal">ICECIE</span>, 2024.</div>
+    <div class="pub-item"><strong>Y. Park, S. Kang, M. J. Kim, Y. Lee, H. S. Kim, J. Yi.</strong> "Neural network training strategy to enhance anomaly detection performance..." <span class="journal">IEEE ICASSP</span>, 2024.</div>
+    <div class="pub-item"><strong>Y. Park, M. J. Kim, U. Gim, J. Yi.</strong> "Recycling for Recycling: RoI Cropping by Recycling a Pre-Trained Attention Mechanism for Accurate Classification of Recyclables." <span class="journal">IEEE SIST</span>, 2023.</div>
+    <div class="pub-item"><strong>Y. Park, M. J. Kim, U. Gim.</strong> "Edge Storage Management Recipe with Zero-Shot Data Compression for Road Anomaly Detection." <span class="journal">IEEE ICTC</span>, 2023.</div>
+    <div class="pub-item"><strong>Y. Park, M. J. Kim, W. S. Park, J. Yi.</strong> "Design of cost-effective auto-encoder for electric motor anomaly detection in resource-constrained edge device." <span class="journal">IEEE ECICE</span>, 2021.</div>
+    <div class="pub-item"><strong>M. J. Kim, T. Park, S. Lee, H. Y. Jung, I. D. Yun.</strong> "Semi-automatic segmentation of knee cartilage in longitudinal MR images by seed transfer." <span class="journal">ICECCE</span>, 2020.</div>
+    <div class="pub-item"><strong>Y. Park, M. J. Kim, U. Gim.</strong> "Attention! is recycling artificial neural network effective for maintaining renewable energy efficiency?" <span class="journal">IEEE TPEC</span>, 2022.</div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">Patents</div>
+  <div class="patent-highlight">
+    <strong>55 Patents Total</strong> &mdash; 52 filed (46 at SK Planet, 6 at Grepp), 3 granted (Penta Security Systems)
   </div>
 </div>
 
 <div class="section">
   <div class="section-title">Education</div>
   <div class="edu-entry">
-    <span class="edu-school">Hankuk University of Foreign Studies</span><br>
-    <span class="edu-degree">M.S. in Medical Image Processing</span> <span class="edu-year">(2015)</span><br>
-    <span class="edu-degree">B.S. in Digital Information Engineering</span> <span class="edu-year">(2013)</span>
+    <span class="edu-degree">M.S. in Medical Image Processing</span>
+    <span class="edu-school">&mdash; Hankuk University of Foreign Studies</span>
+    <span class="edu-year"> (2015)</span>
+  </div>
+  <div class="edu-entry">
+    <span class="edu-degree">B.S. in Digital Information Engineering</span>
+    <span class="edu-school">&mdash; Hankuk University of Foreign Studies</span>
+    <span class="edu-year"> (2013)</span>
   </div>
 </div>
 
