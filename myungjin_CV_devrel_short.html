@@ -6,21 +6,12 @@
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap');
 
-  :root {
-    --text-primary: #1a1a2e;
-    --text-secondary: #3d4f6f;
-    --accent: #4264eb;
-    --divider: #e2e8f0;
-    --bg: #ffffff;
-    --section-bg: #f8fafc;
-  }
-
   * { margin: 0; padding: 0; box-sizing: border-box; }
 
   body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-    color: var(--text-primary);
-    background: var(--bg);
+    color: #1a1a2e;
+    background: #ffffff;
     line-height: 1.5;
     font-size: 12px;
     max-width: 210mm;
@@ -33,30 +24,30 @@
     text-align: center;
     padding-bottom: 10px;
     margin-bottom: 12px;
-    border-bottom: 2px solid var(--accent);
+    border-bottom: 2px solid #4264eb;
   }
   .header h1 {
     font-family: 'Playfair Display', Georgia, serif;
     font-size: 26px;
     font-weight: 700;
-    color: var(--text-primary);
+    color: #1a1a2e;
     margin-bottom: 2px;
   }
   .header .subtitle {
     font-size: 14px;
     font-weight: 600;
-    color: var(--accent);
+    color: #4264eb;
     letter-spacing: 0.5px;
     text-transform: uppercase;
     margin-bottom: 6px;
   }
   .header .contact {
     font-size: 11px;
-    color: var(--text-secondary);
+    color: #3d4f6f;
     line-height: 1.8;
   }
   .header .contact a {
-    color: var(--accent);
+    color: #4264eb;
     text-decoration: none;
   }
 
@@ -65,17 +56,17 @@
     font-family: 'Playfair Display', Georgia, serif;
     font-size: 16px;
     font-weight: 700;
-    color: var(--text-primary);
+    color: #1a1a2e;
     text-transform: uppercase;
     letter-spacing: 1px;
     padding-bottom: 4px;
     margin-bottom: 8px;
-    border-bottom: 1px solid var(--divider);
+    border-bottom: 1px solid #e2e8f0;
   }
 
   .summary-text {
     font-size: 12.5px;
-    color: var(--text-secondary);
+    color: #3d4f6f;
     line-height: 1.6;
     text-align: justify;
     margin-bottom: 8px;
@@ -88,13 +79,13 @@
     align-items: baseline;
     margin-bottom: 2px;
   }
-  .exp-role { font-size: 13px; font-weight: 700; color: var(--text-primary); }
-  .exp-company { font-size: 13px; font-weight: 600; color: var(--accent); }
-  .exp-dates { font-size: 11px; font-weight: 500; color: var(--text-secondary); font-style: italic; }
-  .exp-desc { font-size: 12px; color: var(--text-secondary); line-height: 1.6; margin-left: 4px; }
+  .exp-role { font-size: 13px; font-weight: 700; color: #1a1a2e; }
+  .exp-company { font-size: 13px; font-weight: 600; color: #4264eb; }
+  .exp-dates { font-size: 11px; font-weight: 500; color: #3d4f6f; font-style: italic; }
+  .exp-desc { font-size: 12px; color: #3d4f6f; line-height: 1.6; margin-left: 4px; }
   .exp-desc ul { margin: 2px 0 0 14px; }
   .exp-desc li { margin-bottom: 2px; }
-  .exp-desc li strong { color: var(--text-primary); }
+  .exp-desc li strong { color: #1a1a2e; }
 
   .skills-grid {
     display: grid;
@@ -102,38 +93,38 @@
     gap: 4px 16px;
   }
   .skill-category { font-size: 12px; margin-bottom: 2px; }
-  .skill-category strong { color: var(--text-primary); }
-  .skill-items { color: var(--text-secondary); font-size: 11px; }
+  .skill-category strong { color: #1a1a2e; }
+  .skill-items { color: #3d4f6f; font-size: 11px; }
 
   .pub-patent {
     font-size: 12px;
-    color: var(--text-secondary);
+    color: #3d4f6f;
     margin-bottom: 4px;
     padding-left: 10px;
-    border-left: 2px solid var(--divider);
+    border-left: 2px solid #e2e8f0;
     margin-left: 4px;
   }
-  .pub-patent strong { color: var(--text-primary); }
+  .pub-patent strong { color: #1a1a2e; }
 
   .edu-entry { margin-bottom: 3px; }
-  .edu-school { font-size: 12.5px; font-weight: 600; color: var(--accent); }
-  .edu-degree { font-size: 12.5px; font-weight: 700; color: var(--text-primary); }
-  .edu-year { font-size: 11px; color: var(--text-secondary); font-style: italic; }
+  .edu-school { font-size: 12.5px; font-weight: 600; color: #4264eb; }
+  .edu-degree { font-size: 12.5px; font-weight: 700; color: #1a1a2e; }
+  .edu-year { font-size: 11px; color: #3d4f6f; font-style: italic; }
 
   .highlight-box {
-    background: var(--section-bg);
-    border-left: 3px solid var(--accent);
+    background: #f8fafc;
+    border-left: 3px solid #4264eb;
     padding: 6px 10px;
     margin: 6px 0;
     border-radius: 0 4px 4px 0;
   }
-  .highlight-box strong { color: var(--accent); font-size: 11px; text-transform: uppercase; }
+  .highlight-box strong { color: #4264eb; font-size: 11px; text-transform: uppercase; }
 
   @media print {
     body { padding: 8mm 12mm; }
     .header { margin-bottom: 10px; }
     .section { margin-bottom: 10px; }
-    a { color: var(--accent) !important; text-decoration: none !important; }
+    a { color: #4264eb !important; text-decoration: underline !important; }
   }
 </style>
 </head>
@@ -143,10 +134,10 @@
   <h1>Myungjin Kim</h1>
   <div class="subtitle">Manufacturing AI DevRel &amp; Team Lead</div>
   <div class="contact">
-    <a href="mailto:kjm1559@gmail.com">kjm1559@gmail.com</a><span style="color:var(--divider)">|</span>
-    <a href="https://linkedin.com/in/kjm1559" target="_blank">LinkedIn</a><span style="color:var(--divider)">|</span>
-    <a href="https://github.com/kjm1559" target="_blank">GitHub</a><span style="color:var(--divider)">|</span>
-    <a href="https://scholar.google.com/citations?user=DcCbsc8AAAAJ&hl=ko" target="_blank">Scholar</a><span style="color:var(--divider)">|</span>
+    <a href="mailto:kjm1559@gmail.com">kjm1559@gmail.com</a><span style="color:#e2e8f0">|</span>
+    <a href="https://linkedin.com/in/kjm1559" target="_blank">LinkedIn</a><span style="color:#e2e8f0">|</span>
+    <a href="https://github.com/kjm1559" target="_blank">GitHub</a><span style="color:#e2e8f0">|</span>
+    <a href="https://scholar.google.com/citations?user=DcCbsc8AAAAJ&hl=ko" target="_blank">Scholar</a><span style="color:#e2e8f0">|</span>
     <a href="https://www.kaggle.com/kjm1559" target="_blank">Kaggle Expert</a>
   </div>
 </div>
@@ -154,7 +145,7 @@
 <div class="section">
   <div class="section-title">Summary</div>
   <p class="summary-text">
-    AI Technical Leader with deep expertise in <strong>Manufacturing AI</strong> (Industrial Vision, Sensor Fusion) and next-gen LLM infrastructure. Proven track record of bridging cutting-edge architectures with real-world industrial challenges at <strong>Tier 2 automotive suppliers</strong>. Strong technical authority with <strong>55 patents</strong> (incl. welding inspection, solar panel defect detection, composite R&D, 20+ smart infrastructure patents) and extensive experience in developer tooling, API design, and internal tech evangelism.
+    AI Technical Leader with deep expertise in <strong>Manufacturing AI</strong> (Industrial Vision, Sensor Fusion) and next-gen LLM infrastructure. Proven track record of bridging cutting-edge architectures with real-world industrial challenges at <strong>Tier 1 automotive suppliers</strong>. Strong technical authority with <strong>55 patents</strong> (incl. welding inspection, solar panel defect detection, composite R&D, 20+ smart infrastructure patents) and extensive experience in developer tooling, API design, and internal tech evangelism.
   </p>
 </div>
 
@@ -219,12 +210,12 @@
 <div class="section">
   <div class="section-title">Patents &amp; Publications</div>
   <div class="pub-patent"><strong>55 Patents Total</strong> — 52 filed (46 SK Planet, 6 Grepp), 3 granted (Penta Security)</div>
-  <ul style="margin: 2px 0 0 14px; font-size: 11px; color: var(--text-secondary); list-style-type: disc;">
+  <ul style="margin: 2px 0 0 14px; font-size: 11px; color: #3d4f6f; list-style-type: disc;">
     <li><strong>Manufacturing:</strong> Welding inspection, solar panel defect detection, composite material GAN/Autoencoder</li>
     <li><strong>Smart Infra:</strong> CCTV parking/traffic, road analysis, landslide/flooding prediction, sensor fusion</li>
     <li><strong>Penta Security (Registered):</strong> CAN signal detection, CAE traffic anomaly, groupware behavior monitor</li>
   </ul>
-  <div style="margin-top: 2px; font-size: 11px;">Full list: <a href="https://github.com/kjm1559/kjm1559.github.io/blob/main/patents.md" target="_blank" style="color: var(--accent);">patents.md</a></div>
+  <div style="margin-top: 2px; font-size: 11px;">Full list: <a href="https://github.com/kjm1559/kjm1559.github.io/blob/main/patents.md" target="_blank" style="color: #4264eb;">patents.md</a></div>
   <div class="pub-patent" style="margin-top: 4px;"><strong>12 Publications:</strong> IEEE ISBI, ICASSP, IEEE Trans. Industrial Applications, Scientific Reports, arXiv.</div>
 </div>
 
